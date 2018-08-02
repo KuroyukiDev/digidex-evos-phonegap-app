@@ -1,0 +1,2419 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DigiDex Evos</title>
+	<meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+	
+	<link rel="stylesheet" href="scripts/jqm/jquery.mobile.icons.min.css" />
+	<link rel="stylesheet" href="scripts/jqm/jquery.mobile.min.css" />
+	<script src="scripts/jquery/jquery-1.11.1.min.js"></script>
+	<script src="scripts/jqm/jquery.mobile.min.js"></script>
+	
+	<link rel="stylesheet" href="/scripts/css/style.css" />
+	
+</head>
+<body>
+	
+	<div data-role="page" data-theme="a">
+		<div data-role="header" data-theme="b" data-position="fixed">
+			<h1>DigiDex Evos</h1>
+		</div>
+		<div data-role="content" class="ui-container">
+			
+			<button onclick="location.href='#digidex'">To DigiDex</button>
+			
+		</div>
+		<div data-role="footer" data-theme="b" data-position="fixed">
+			<h4>KuroyukiDev &copy; 2018</h4>
+		</div>
+	</div>
+	
+	<div data-role="page" id="digidex" data-theme="a" data-position="fixed">
+		<div data-role="header" data-theme="b" data-position="fixed">
+			<h1>DigiDex Evos</h1>
+		</div>
+		<div data-role="content" class="ui-container">
+			
+			<h2 class="text-center">Stage Groups</h2>
+			
+			<div data-role="collapsibleset">
+				
+				<div data-role="collapsible" data-collapsed="true">
+					<h3>Baby</h3>
+					<ul id="babyList" data-role="listview">
+						<li><a href="#botamon">Botamon</a></li>
+						<li><a href="#kuramon">Kuramon</a></li>
+						<li><a href="#pabumon">Pabumon</a></li>
+						<li><a href="#poyomon">Poyomon</a></li>
+						<li><a href="#punimon">Punimon</a></li>
+					</ul>
+				</div>
+				
+				<div data-role="collapsible" data-collapsed="true">
+					<h3>In Training</h3>
+					<ul id="inTrainingList" data-role="listview">
+						<li><a href="#bukamon">Bukamon</a></li>
+						<li><a href="#koromon">Koromon</a></li>
+						<li><a href="#motimon">Motimon</a></li>
+						<li><a href="#nyaromon">Nyaromon</a></li>
+						<li><a href="#pagumon">Pagumon</a></li>
+						<li><a href="#tanemon">Tanemon</a></li>
+						<li><a href="#tokomon">Tokomon</a></li>
+						<li><a href="#tsumemon">Tsumemon</a></li>
+						<li><a href="#tsunomon">Tsunomon</a></li>
+						<li><a href="#wanyamon">Wanyamon</a></li>
+						<li><a href="#yokomon">Yokomon</a></li>
+					</ul>
+				</div>
+				
+				<div data-role="collapsible" data-collapsed="true">
+					<h3>Rookie</h3>
+					<ul data-role="listview">
+						<li><a href="#agumon">Agumon</a></li>
+						<li><a href="#b-agumon">Agumon (Black)</a></li>
+						<li><a href="#armadillomon">Armadillomon</a></li>
+						<li><a href="#betamon">Betamon</a></li>
+						<li><a href="#biyomon">Biyomon</a></li>
+						<li><a href="#demidevimon">DemiDevimon</a></li>
+						<li><a href="#dorumon">Dorumon</a></li>
+						<li><a href="#elecmon">Elecmon</a></li>
+						<li><a href="#falcomon">Falcomon</a></li>
+						<li><a href="#gabumon">Gabumon</a></li>
+						<li><a href="#b-gabumon">Gabumon (Black)</a></li>
+						<li><a href="#gaomon">Gaomon</a></li>
+						<li><a href="#gazimon">Gazimon</a></li>
+						<li><a href="#goblimon">Goblimon</a></li>
+						<li><a href="#gomamon">Gomamon</a></li>
+						<li><a href="#gotsumon">Gotsumon</a></li>
+						<li><a href="#guilmon">Guilmon</a></li>
+						<li><a href="#hackmon">Hackmon</a></li>
+						<li><a href="#hagurumon">Hagurumon</a></li>
+						<li><a href="#hawkmon">Hawkmon</a></li>
+						<li><a href="#impmon">Impmon</a></li>
+						<li><a href="#keramon">Keramon</a></li>
+						<li><a href="#kudamon">Kudamon</a></li>
+<!--						<li><a href="#mon">mon</a></li>-->
+					</ul>
+				</div>
+				
+				<div data-role="collapsible" data-collapsed="true">
+					<h3>Champion</h3>
+					<ul data-role="listview">
+<!--						<li><a href="index.html#mon">mon</a></li>-->
+					</ul>
+				</div>
+
+				<div data-role="collapsible" data-collapsed="true">
+					<h3>Ultimate</h3>
+					<ul data-role="listview">
+<!--						<li><a href="index.html#mon">mon</a></li>-->
+					</ul>
+				</div>
+
+				<div data-role="collapsible" data-collapsed="true">
+					<h3>Mega</h3>
+					<ul data-role="listview">
+<!--						<li><a href="index.html#mon">mon</a></li>-->
+					</ul>
+				</div>
+			</div>
+			
+		</div>
+		<div data-role="footer" data-theme="b" data-position="fixed">
+			<h4>KuroyukiDev &copy; 2018</h4>
+		</div>
+	</div>
+
+<!--	..........................................................................................    -->
+	
+<!--	Baby    -->
+	
+<!--	..........................................................................................    -->
+	
+	<div data-role="page" id="botamon" data-theme="a">
+		<div data-role="header" data-theme="b" data-position="fixed">
+			<button onclick="location.href='#digidex'" class="ui-btn ui-btn-left ui-btn-b ui-btn-inline ui-icon-home ui-btn-icon-left ui-corner-all ui-btn-icon-notext"></button>
+			<h1>Botamon</h1>
+		</div>
+		<div data-role="content" class="ui-container">
+			
+			<ul data-role="listview">
+				<li>
+					<h3>Data:</h3>
+					<ul>
+						<li><strong>Type:</strong> Free</li>
+						<li><strong>Attribute:</strong> Neutral</li>
+						<li><strong>Equip Slots:</strong> 0</li>
+						<li><strong>Memory Use:</strong> 2</li>
+					</ul>
+				</li>
+			</ul>
+			
+			<br><br>
+			
+			<ul data-role="listview">
+				<li>
+					<a href="#wanyamon">
+						<h4>Wanyamon</h4>
+						<ul>
+							<li><strong>Level:</strong> 5</li>
+						</ul>
+					</a>
+				</li>
+				<li>
+					<a href="#koromon">
+						<h4>Koromon</h4>
+						<ul>
+							<li><strong>Level:</strong> 3</li>
+							<li><strong>ATK:</strong> 15</li>
+						</ul>
+					</a>
+				</li>
+			</ul>
+			
+		</div>
+		<div data-role="footer" data-theme="b" data-position="fixed">
+			<h4>KuroyukiDev &copy; 2018</h4>
+		</div>
+	</div>
+	
+<!--	..........................................................................................    -->
+	
+	<div data-role="page" id="kuramon" data-theme="a">
+		<div data-role="header" data-theme="b" data-position="fixed">
+			<button onclick="location.href='#digidex'" class="ui-btn ui-btn-left ui-btn-b ui-btn-inline ui-icon-home ui-btn-icon-left ui-corner-all ui-btn-icon-notext"></button>
+			<h1>Kuramon</h1>
+		</div>
+		<div data-role="content" class="ui-container">
+			<ul data-role="listview">
+				<li>
+					<h3>Data:</h3>
+					<ul>
+						<li><strong>Type:</strong> Free</li>
+						<li><strong>Attribute:</strong> Neutral</li>
+						<li><strong>Equip Slots:</strong> 0</li>
+						<li><strong>Memory Use:</strong> 2</li>
+					</ul>
+				</li>
+			</ul>
+			
+			<br><br>
+			
+			<ul data-role="listview">
+				<li>
+					<a href="#tsumemon">
+						<h4>Tsumemon</h4>
+						<ul>
+							<li><strong>Level:</strong> 5</li>
+						</ul>
+					</a>
+				</li>
+				<li>
+					<a href="#pagumon">
+						<h4>Pagumon</h4>
+						<ul>
+							<li><strong>Level:</strong> 5</li>
+						</ul>
+					</a>
+				</li>
+			</ul>
+			
+		</div>
+		<div data-role="footer" data-theme="b" data-position="fixed">
+			<h4>KuroyukiDev &copy; 2018</h4>
+		</div>
+	</div>
+	
+<!--	..........................................................................................    -->
+	
+	<div data-role="page" id="pabumon" data-theme="a">
+		<div data-role="header" data-theme="b" data-position="fixed">
+			<button onclick="location.href='#digidex'" class="ui-btn ui-btn-left ui-btn-b ui-btn-inline ui-icon-home ui-btn-icon-left ui-corner-all ui-btn-icon-notext"></button>
+			<h1>Pabumon</h1>
+		</div>
+		<div data-role="content" class="ui-container">
+			
+			<ul data-role="listview">
+				<li>
+					<h3>Data:</h3>
+					<ul>
+						<li><strong>Type:</strong> Free</li>
+						<li><strong>Attribute:</strong> Neutral</li>
+						<li><strong>Equip Slots:</strong> 0</li>
+						<li><strong>Memory Use:</strong> 2</li>
+					</ul>
+				</li>
+			</ul>
+			
+			<br><br>
+			
+			<ul data-role="listview">
+				<li>
+					<a href="#motimon">
+						<h4>Motimon</h4>
+						<ul>
+							<li><strong>Level:</strong> 3</li>
+							<li><strong>DEF:</strong> 15</li>
+						</ul>
+					</a>
+				</li>
+				<li>
+					<a href="#tanemon">
+						<h4>Tanemon</h4>
+						<ul>
+							<li><strong>Level:</strong> 5</li>
+						</ul>
+					</a>
+				</li>
+				<li>
+					<a href="#yokomon">
+						<h4>Yokomon</h4>
+						<ul>
+							<li><strong>Level:</strong> 3</li>
+							<li><strong>HP:</strong> 50</li>
+						</ul>
+					</a>
+				</li>
+			</ul>
+			
+		</div>
+		<div data-role="footer" data-theme="b" data-position="fixed">
+			<h4>KuroyukiDev &copy; 2018</h4>
+		</div>
+	</div>
+	
+<!--	..........................................................................................    -->
+	
+	<div data-role="page" id="poyomon" data-theme="a">
+		<div data-role="header" data-theme="b" data-position="fixed">
+			<button onclick="location.href='#digidex'" class="ui-btn ui-btn-left ui-btn-b ui-btn-inline ui-icon-home ui-btn-icon-left ui-corner-all ui-btn-icon-notext"></button>
+			<h1>Poyomon</h1>
+		</div>
+		<div data-role="content" class="ui-container">
+			
+			<ul data-role="listview">
+				<li>
+					<h3>Data:</h3>
+					<ul>
+						<li><strong>Type:</strong> Free</li>
+						<li><strong>Attribute:</strong> Neutral</li>
+						<li><strong>Equip Slots:</strong> 0</li>
+						<li><strong>Memory Use:</strong> 2</li>
+					</ul>
+				</li>
+			</ul>
+			
+			<br><br>
+			
+			<ul data-role="listview">
+				<li>
+					<a href="#bukamon">
+						<h4>Bukamon</h4>
+						<ul>
+							<li><strong>Level:</strong> 3</li>
+							<li><strong>INT:</strong> 15</li>
+						</ul>
+					</a>
+				</li>
+				<li>
+					<a href="#tokomon">
+						<h4>Tokomon</h4>
+						<ul>
+							<li><strong>Level:</strong> 5</li>
+						</ul>
+					</a>
+				</li>
+			</ul>
+			
+		</div>
+		<div data-role="footer" data-theme="b" data-position="fixed">
+			<h4>KuroyukiDev &copy; 2018</h4>
+		</div>
+	</div>
+	
+<!--	..........................................................................................    -->
+	
+	<div data-role="page" id="punimon" data-theme="a">
+		<div data-role="header" data-theme="b" data-position="fixed">
+			<button onclick="location.href='#digidex'" class="ui-btn ui-btn-left ui-btn-b ui-btn-inline ui-icon-home ui-btn-icon-left ui-corner-all ui-btn-icon-notext"></button>
+			<h1>Punimon</h1>
+		</div>
+		<div data-role="content" class="ui-container">
+			
+			<ul data-role="listview">
+				<li>
+					<h3>Data:</h3>
+					<ul>
+						<li><strong>Type:</strong> Free</li>
+						<li><strong>Attribute:</strong> Neutral</li>
+						<li><strong>Equip Slots:</strong> 0</li>
+						<li><strong>Memory Use:</strong> 2</li>
+					</ul>
+				</li>
+			</ul>
+			
+			<br><br>
+			
+			<ul data-role="listview">
+				<li>
+					<a href="#nyaromon">
+						<h4>Nyaromon</h4>
+						<ul>
+							<li><strong>Level:</strong> 3</li>
+							<li><strong>INT:</strong> 10</li>
+						</ul>
+					</a>
+				</li>
+				<li>
+					<a href="#tsunomon">
+						<h4>Tsunomon</h4>
+						<ul>
+							<li><strong>Level:</strong> 5</li>
+						</ul>
+					</a>
+				</li>
+			</ul>
+			
+		</div>
+		<div data-role="footer" data-theme="b" data-position="fixed">
+			<h4>KuroyukiDev &copy; 2018</h4>
+		</div>
+	</div>
+	
+<!--	..........................................................................................    -->
+	
+<!--	In Training    -->
+	
+<!--	..........................................................................................    -->
+	
+	<div data-role="page" id="bukamon" data-theme="a">
+		<div data-role="header" data-theme="b" data-position="fixed">
+			<button onclick="location.href='#digidex'" class="ui-btn ui-btn-left ui-btn-b ui-btn-inline ui-icon-home ui-btn-icon-left ui-corner-all ui-btn-icon-notext"></button>
+			<h1>Bukamon</h1>
+		</div>
+		<div data-role="content" class="ui-container">
+			
+			<ul data-role="listview">
+				<li>
+					<h3>Data:</h3>
+					<ul>
+						<li><strong>Type:</strong> Free</li>
+						<li><strong>Attribute:</strong> Water</li>
+						<li><strong>Equip Slots:</strong> 0</li>
+						<li><strong>Memory Use:</strong> 3</li>
+					</ul>
+				</li>
+			</ul>
+			<div data-role="collapsibleset">
+				<div data-role="collapsible" data-collapsed="true">
+					<h3>Skills</h3>
+					<ul data-role="listview">
+						<li>
+							<h3>Inherited Skills:</h3>
+							<ul>
+								<li><strong>Name:</strong> Hydro Water 1</li>
+								<li><strong>Type:</strong> Magic</li>
+								<li><strong>Dmg:</strong> 55 Water Dmg</li>
+								<li><strong>Range:</strong> 1 Enemy</li>
+								<li><strong>Accuracy:</strong> 95%</li>
+								<li><strong>Learns at Level:</strong> 5</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<div data-role="collapsible" data-collapsed="true">
+					<h3>Digi-Evolution Data</h3>
+					<ul data-role="listview">
+						<li><h3>De-Digivolves To:</h3></li>
+						<li>
+							<a href="#poyomon">
+								<h4>Poyomon</h4>
+							</a>
+						</li>
+						<li><h3>Digivolves To:</h3></li>
+						<li>
+							<a href="#otamamon">
+								<h4>Otamamon</h4>
+								<ul>
+									<li><strong>Level:</strong> 5</li>
+									<li><strong>INT:</strong> 20</li>
+								</ul>
+							</a>
+						</li>
+						<li>
+							<a href="#gomamon">
+								<h4>Gomamon</h4>
+								<ul>
+									<li><strong>Level:</strong> 8</li>
+									<li><strong>HP:</strong> 100</li>
+									<li><strong>CAM:</strong> 10%</li>
+								</ul>
+							</a>
+						</li>
+						<li>
+							<a href="#syakomon">
+								<h4>Syakomon</h4>
+								<ul>
+									<li><strong>Level:</strong> 7</li>
+									<li><strong>DEF:</strong> 15</li>
+									<li><strong>INT:</strong> 20</li>
+								</ul>
+							</a>
+						</li>
+						<li>
+							<a href="#betamon">
+								<h4>Betamon</h4>
+								<ul>
+									<li><strong>Level:</strong> 8</li>
+									<li><strong>INT:</strong> 40</li>
+								</ul>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			
+			<br><br>
+			
+		</div>
+		<div data-role="footer" data-theme="b" data-position="fixed">
+			<h4>KuroyukiDev &copy; 2018</h4>
+		</div>
+	</div>
+	
+<!--	..........................................................................................    -->
+	
+	<div data-role="page" id="koromon" data-theme="a">
+		<div data-role="header" data-theme="b" data-position="fixed">
+			<button onclick="location.href='#digidex'" class="ui-btn ui-btn-left ui-btn-b ui-btn-inline ui-icon-home ui-btn-icon-left ui-corner-all ui-btn-icon-notext"></button>
+			<h1>Koromon</h1>
+		</div>
+		<div data-role="content" class="ui-container">
+			
+			<ul data-role="listview">
+				<li>
+					<h3>Data:</h3>
+					<ul>
+						<li><strong>Type:</strong> Free</li>
+						<li><strong>Attribute:</strong> Fire</li>
+						<li><strong>Equip Slots:</strong> 0</li>
+						<li><strong>Memory Use:</strong> 3</li>
+					</ul>
+				</li>
+			</ul>
+			<div data-role="collapsibleset">
+				<div data-role="collapsible" data-collapsed="true">
+					<h3>Skills</h3>
+					<ul data-role="listview">
+						<li>
+							<h3>Inherited Skills:</h3>
+							<ul>
+								<li><strong>Name:</strong> Wolkenapalm 1</li>
+								<li><strong>Type:</strong> Physical</li>
+								<li><strong>Dmg:</strong> 65 Fire Dmg</li>
+								<li><strong>Range:</strong> 1 Enemy</li>
+								<li><strong>Accuracy:</strong> 95%</li>
+								<li><strong>Learns at Level:</strong> 5</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<div data-role="collapsible" data-collapsed="true">
+					<h3>Digi-Evolution Data</h3>
+					<ul data-role="listview">
+						<li><h3>De-Digivolves To:</h3></li>
+						<li>
+							<a href="#botamon">
+								<h4>Botamon</h4>
+							</a>
+						</li>
+						<li><h3>Digivolves To:</h3></li>
+						<li>
+							<a href="#agumon">
+								<h4>Agumon</h4>
+								<ul>
+									<li><strong>Level:</strong> 9</li>
+									<li><strong>ATK:</strong> 30</li>
+									<li><strong>CAM:</strong> 10%</li>
+								</ul>
+							</a>
+						</li>
+						<li>
+							<a href="#hackmon">
+								<h4>Hackmon</h4>
+								<ul>
+									<li><strong>Level:</strong> 9</li>
+									<li><strong>ATK:</strong> 20</li>
+									<li><strong>ABI:</strong> 20</li>
+									<li><strong>Steel Will (item)</strong></li>
+								</ul>
+							</a>
+						</li>
+						<li>
+							<a href="#guilmon">
+								<h4>Guilmon</h4>
+								<ul>
+									<li><strong>Level:</strong> 7</li>
+									<li><strong>ATK:</strong> 30</li>
+									<li><strong>SPD:</strong> 20</li>
+								</ul>
+							</a>
+						</li>
+						<li>
+							<a href="#toyagumon">
+								<h4>ToyAgumon</h4>
+								<ul>
+									<li><strong>Level:</strong> 8</li>
+									<li><strong>HP:</strong> 75</li>
+									<li><strong>DEF:</strong> 20</li>
+								</ul>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<br><br>
+			
+			
+			
+			
+		</div>
+		<div data-role="footer" data-theme="b" data-position="fixed">
+			<h4>KuroyukiDev &copy; 2018</h4>
+		</div>
+	</div>
+	
+<!--	..........................................................................................    -->
+	
+	<div data-role="page" id="motimon" data-theme="a">
+		<div data-role="header" data-theme="b" data-position="fixed">
+			<button onclick="location.href='#digidex'" class="ui-btn ui-btn-left ui-btn-b ui-btn-inline ui-icon-home ui-btn-icon-left ui-corner-all ui-btn-icon-notext"></button>
+			<h1>Motimon</h1>
+		</div>
+		<div data-role="content" class="ui-container">
+			
+			<ul data-role="listview">
+				<li>
+					<h3>Data:</h3>
+					<ul>
+						<li><strong>Type:</strong> Free</li>
+						<li><strong>Attribute:</strong> Neutral</li>
+						<li><strong>Equip Slots:</strong> 0</li>
+						<li><strong>Memory Use:</strong> 3</li>
+					</ul>
+				</li>
+			</ul>
+			<div data-role="collapsibleset">
+				<div data-role="collapsible" data-collapsed="true">
+					<h3>Skills</h3>
+					<ul data-role="listview">
+						<li>
+							<h3>Inherited Skills:</h3>
+							<ul>
+								<li><strong>Name:</strong> Power Energy 1</li>
+								<li><strong>Type:</strong> Magic</li>
+								<li><strong>Dmg:</strong> 60 Neutral Dmg</li>
+								<li><strong>Range:</strong> 1 Enemy</li>
+								<li><strong>Accuracy:</strong> 95%</li>
+								<li><strong>Learns at Level:</strong> 5</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<div data-role="collapsible" data-collapsed="true">
+					<h3>Digi-Evolution Data</h3>
+					<ul data-role="listview">
+						<li><h3>De-Digivolves To:</h3></li>
+						<li>
+							<a href="#pabumon">
+								<h4>Pabumon</h4>
+							</a>
+						</li>
+						<li><h3>Digivolves To:</h3></li>
+						<li>
+							<a href="#gotsumon">
+								<h4>Gotsumon</h4>
+								<ul>
+									<li><strong>Level:</strong> 8</li>
+									<li><strong>DEF:</strong> 30</li>
+								</ul>
+							</a>
+						</li>
+						<li>
+							<a href="#hagurumon">
+								<h4>Hagurumon</h4>
+								<ul>
+									<li><strong>Level:</strong> 7</li>
+									<li><strong>HP:</strong> 75</li>
+									<li><strong>DEF:</strong> 30</li>
+								</ul>
+							</a>
+						</li>
+						<li>
+							<a href="#tentomon">
+								<h4>Tentomon</h4>
+								<ul>
+									<li><strong>Level:</strong> 9</li>
+									<li><strong>DEF:</strong> 20</li>
+									<li><strong>CAM:</strong> 10%</li>
+								</ul>
+							</a>
+						</li>
+						<li>
+							<a href="#solarmon">
+								<h4>Solarmon</h4>
+								<ul>
+									<li><strong>Level:</strong> 6</li>
+									<li><strong>HP:</strong> 75</li>
+									<li><strong>DEF:</strong> 25</li>
+								</ul>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<br><br>
+			
+			
+		</div>
+		<div data-role="footer" data-theme="b" data-position="fixed">
+			<h4>KuroyukiDev &copy; 2018</h4>
+		</div>
+	</div>
+	
+<!--	..........................................................................................    -->
+	
+	<div data-role="page" id="nyaromon" data-theme="a">
+		<div data-role="header" data-theme="b" data-position="fixed">
+			<button onclick="location.href='#digidex'" class="ui-btn ui-btn-left ui-btn-b ui-btn-inline ui-icon-home ui-btn-icon-left ui-corner-all ui-btn-icon-notext"></button>
+			<h1>Nyaromon</h1>
+		</div>
+		<div data-role="content" class="ui-container">
+			
+			<ul data-role="listview">
+				<li>
+					<h3>Data:</h3>
+					<ul>
+						<li><strong>Type:</strong> Free</li>
+						<li><strong>Attribute:</strong> Light</li>
+						<li><strong>Equip Slots:</strong> 0</li>
+						<li><strong>Memory Use:</strong> 3</li>
+					</ul>
+				</li>
+			</ul>
+			<div data-role="collapsibleset">
+				<div data-role="collapsible" data-collapsed="true">
+					<h3>Skills</h3>
+						<ul data-role="listview">
+						<li>
+							<h3>Inherited Skills:</h3>
+							<ul>
+								<li><strong>Name:</strong> Saint Knuckle 1</li>
+								<li><strong>Type:</strong> Physical</li>
+								<li><strong>Dmg:</strong> 65 Light Dmg</li>
+								<li><strong>Range:</strong> 1 Enemy</li>
+								<li><strong>Accuracy:</strong> 95%</li>
+								<li><strong>Learns at Level:</strong> 5</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<div data-role="collapsible" data-collapsed="true">
+					<h3>Digi-Evolution Data</h3>
+					<ul data-role="listview">
+						<li><h3>De-Digivolves To:</h3></li>
+						<li>
+							<a href="#punimon">
+								<h4>Punimon</h4>
+							</a>
+						</li>
+						<li><h3>Digivolves To:</h3></li>
+						<li>
+							<a href="#armadillomon">
+								<h4>Armadillomon</h4>
+								<ul>
+									<li><strong>Level:</strong> 7</li>
+									<li><strong>HP:</strong> 75</li>
+									<li><strong>DEF:</strong> 20</li>
+								</ul>
+							</a>
+						</li>
+						<li>
+							<a href="#terriermon">
+								<h4>Terriermon</h4>
+								<ul>
+									<li><strong>Level:</strong> 8</li>
+									<li><strong>SPD:</strong> 30</li>
+									<li><strong>CAM:</strong> 10%</li>
+								</ul>
+							</a>
+						</li>
+						<li>
+							<a href="#salamon">
+								<h4>Salamon</h4>
+								<ul>
+									<li><strong>Level:</strong> 9</li>
+									<li><strong>SP:</strong> 20</li>
+									<li><strong>INT:</strong> 20</li>
+									<li><strong>CAM:</strong> 10%</li>
+								</ul>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			
+			<br><br>
+			
+			
+			
+			
+		</div>
+		<div data-role="footer" data-theme="b" data-position="fixed">
+			<h4>KuroyukiDev &copy; 2018</h4>
+		</div>
+	</div>
+	
+<!--	..........................................................................................    -->
+	
+	<div data-role="page" id="pagumon" data-theme="a">
+		<div data-role="header" data-theme="b" data-position="fixed">
+			<button onclick="location.href='#digidex'" class="ui-btn ui-btn-left ui-btn-b ui-btn-inline ui-icon-home ui-btn-icon-left ui-corner-all ui-btn-icon-notext"></button>
+			<h1>Pagumon</h1>
+		</div>
+		<div data-role="content" class="ui-container">
+			
+			<ul data-role="listview">
+				<li>
+					<h3>Data:</h3>
+					<ul>
+						<li><strong>Type:</strong> Free</li>
+						<li><strong>Attribute:</strong> Dark</li>
+						<li><strong>Equip Slots:</strong> 0</li>
+						<li><strong>Memory Use:</strong> 3</li>
+					</ul>
+				</li>
+			</ul>
+			<div data-role="collapsibleset">
+				<div data-role="collapsible" data-collapsed="true">
+					<h3>Skills</h3>
+						<ul data-role="listview">
+						<li>
+							<h3>Inherited Skills:</h3>
+							<ul>
+								<li><strong>Name:</strong> Nightmare 1</li>
+								<li><strong>Type:</strong> Magic</li>
+								<li><strong>Dmg:</strong> 55 Dark Dmg</li>
+								<li><strong>Range:</strong> 1 Enemy</li>
+								<li><strong>Accuracy:</strong> 95%</li>
+								<li><strong>Learns at Level:</strong> 5</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<div data-role="collapsible" data-collapsed="true">
+					<h3>Digi-Evolution Data</h3>
+					<ul data-role="listview">
+						<li><h3>De-Digivolves To:</h3></li>
+						<li>
+							<a href="#kuramon">
+								<h4>Kuramon</h4>
+							</a>
+						</li>
+						<li><h3>Digivolves To:</h3></li>
+						<li>
+							<a href="#gazimon">
+								<h4>Gazimon</h4>
+								<ul>
+									<li><strong>Level:</strong> 7</li>
+									<li><strong>ATK:</strong> 15</li>
+									<li><strong>SPD:</strong> 20</li>
+								</ul>
+							</a>
+						</li>
+						<li>
+							<a href="#impmon">
+								<h4>Impmon</h4>
+								<ul>
+									<li><strong>Level:</strong> 7</li>
+									<li><strong>SP:</strong> 20</li>
+									<li><strong>INT:</strong> 30</li>
+								</ul>
+							</a>
+						</li>
+						<li>
+							<a href="#lopmon">
+								<h4>Lopmon</h4>
+								<ul>
+									<li><strong>Level:</strong> 8</li>
+									<li><strong>ATK:</strong> 15</li>
+									<li><strong>INT:</strong> 20</li>
+								</ul>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			
+			<br><br>
+			
+			
+			
+			
+		</div>
+		<div data-role="footer" data-theme="b" data-position="fixed">
+			<h4>KuroyukiDev &copy; 2018</h4>
+		</div>
+	</div>
+	
+<!--	..........................................................................................    -->
+	
+	<div data-role="page" id="tanemon" data-theme="a">
+		<div data-role="header" data-theme="b" data-position="fixed">
+			<button onclick="location.href='#digidex'" class="ui-btn ui-btn-left ui-btn-b ui-btn-inline ui-icon-home ui-btn-icon-left ui-corner-all ui-btn-icon-notext"></button>
+			<h1>Tanemon</h1>
+		</div>
+		<div data-role="content" class="ui-container">
+			
+			<ul data-role="listview">
+				<li>
+					<h3>Data:</h3>
+					<ul>
+						<li><strong>Type:</strong> Free</li>
+						<li><strong>Attribute:</strong> Plant</li>
+						<li><strong>Equip Slots:</strong> 0</li>
+						<li><strong>Memory Use:</strong> 3</li>
+					</ul>
+				</li>
+			</ul>
+			<div data-role="collapsibleset">
+				<div data-role="collapsible" data-collapsed="true">
+					<h3>Skills</h3>
+					<ul data-role="listview">
+						<li>
+							<h3>Inherited Skills:</h3>
+							<ul>
+								<li><strong>Name:</strong> Gaia Element 1</li>
+								<li><strong>Type:</strong> Magic</li>
+								<li><strong>Dmg:</strong> 55 Plant Dmg</li>
+								<li><strong>Range:</strong> 1 Enemy</li>
+								<li><strong>Accuracy:</strong> 95%</li>
+								<li><strong>Learns at Level:</strong> 5</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<div data-role="collapsible" data-collapsed="true">
+					<h3>Digi-Evolution Data</h3>
+					<ul data-role="listview">
+						<li><h3>De-Digivolves To:</h3></li>
+						<li>
+							<a href="#pabumon">
+								<h4>Pabumon</h4>
+							</a>
+						</li>
+						<li><h3>Digivolves To:</h3></li>
+						<li>
+							<a href="#palmon">
+								<h4>Palmon</h4>
+								<ul>
+									<li><strong>Level:</strong> 8</li>
+									<li><strong>HP:</strong> 100</li>
+									<li><strong>CAM:</strong> 10%</li>
+								</ul>
+							</a>
+						</li>
+						<li>
+							<a href="#lalamon">
+								<h4>Lalamon</h4>
+								<ul>
+									<li><strong>Level:</strong> 9</li>
+									<li><strong>HP:</strong> 75</li>
+								</ul>
+							</a>
+						</li>
+						<li>
+							<a href="#renamon">
+								<h4>Renamon</h4>
+								<ul>
+									<li><strong>Level:</strong> 7</li>
+									<li><strong>ATK:</strong> 20</li>
+									<li><strong>INT:</strong> 20</li>
+									<li><strong>SPD:</strong> 20</li>
+								</ul>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			
+			<br><br>
+			
+			
+			
+		</div>
+		<div data-role="footer" data-theme="b" data-position="fixed">
+			<h4>KuroyukiDev &copy; 2018</h4>
+		</div>
+	</div>
+	
+<!--	..........................................................................................    -->
+	
+	<div data-role="page" id="tokomon" data-theme="a">
+		<div data-role="header" data-theme="b" data-position="fixed">
+			<button onclick="location.href='#digidex'" class="ui-btn ui-btn-left ui-btn-b ui-btn-inline ui-icon-home ui-btn-icon-left ui-corner-all ui-btn-icon-notext"></button>
+			<h1>Tokomon</h1>
+		</div>
+		<div data-role="content" class="ui-container">
+			
+			<ul data-role="listview">
+				<li>
+					<h3>Data:</h3>
+					<ul>
+						<li><strong>Type:</strong> Free</li>
+						<li><strong>Attribute:</strong> Neutral</li>
+						<li><strong>Equip Slots:</strong> 0</li>
+						<li><strong>Memory Use:</strong> 3</li>
+					</ul>
+				</li>
+			</ul>
+			<div data-role="collapsibleset">
+				<div data-role="collapsible" data-collapsed="true">
+					<h3>Skills</h3>
+					<ul data-role="listview">
+						<li>
+							<h3>Inherited Skills:</h3>
+							<ul>
+								<li><strong>Name:</strong> Heavy Strike 1</li>
+								<li><strong>Type:</strong> Physical</li>
+								<li><strong>Dmg:</strong> 70 Neutral Dmg</li>
+								<li><strong>Range:</strong> 1 Enemy</li>
+								<li><strong>Accuracy:</strong> 95%</li>
+								<li><strong>Learns at Level:</strong> 5</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<div data-role="collapsible" data-collapsed="true">
+					<h3>Digi-Evolution Data</h3>
+					<ul data-role="listview">
+						<li><h3>De-Digivolves To:</h3></li>
+						<li>
+							<a href="#poyomon">
+								<h4>Poyomon</h4>
+							</a>
+						</li>
+						<li><h3>Digivolves To:</h3></li>
+						<li>
+							<a href="#falcomon">
+								<h4>Falcomon</h4>
+								<ul>
+									<li><strong>Level:</strong> 9</li>
+									<li><strong>SPD:</strong> 30</li>
+								</ul>
+							</a>
+						</li>
+						<li>
+							<a href="#hawkmon">
+								<h4>Hawkmon</h4>
+								<ul>
+									<li><strong>Level:</strong> 7</li>
+									<li><strong>SPD:</strong> 30</li>
+									<li><strong>CAM:</strong> 10%</li>
+								</ul>
+							</a>
+						</li>
+						<li>
+							<a href="#lucemon">
+								<h4>Lucemon</h4>
+								<ul>
+									<li><strong>Level:</strong> 30</li>
+									<li><strong>SP:</strong> 80</li>
+									<li><strong>INT:</strong> 130</li>
+									<li><strong>ABI:</strong> 80</li>
+								</ul>
+							</a>
+						</li>
+						<li>
+							<a href="#patamon">
+								<h4>Patamon</h4>
+								<ul>
+									<li><strong>Level:</strong> 7</li>
+									<li><strong>INT:</strong> 20</li>
+									<li><strong>SPD:</strong> 20</li>
+									<li><strong>CAM:</strong> 10%</li>
+								</ul>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			
+			<br><br>
+			
+			
+		</div>
+		<div data-role="footer" data-theme="b" data-position="fixed">
+			<h4>KuroyukiDev &copy; 2018</h4>
+		</div>
+	</div>
+	
+<!--	..........................................................................................    -->
+	
+	<div data-role="page" id="tsumemon" data-theme="a">
+		<div data-role="header" data-theme="b" data-position="fixed">
+			<button onclick="location.href='#digidex'" class="ui-btn ui-btn-left ui-btn-b ui-btn-inline ui-icon-home ui-btn-icon-left ui-corner-all ui-btn-icon-notext"></button>
+			<h1>Tsumemon</h1>
+		</div>
+		<div data-role="content" class="ui-container">
+			
+			<ul data-role="listview">
+				<li>
+					<h3>Data:</h3>
+					<ul>
+						<li><strong>Type:</strong> Free</li>
+						<li><strong>Attribute:</strong> Dark</li>
+						<li><strong>Equip Slots:</strong> 0</li>
+						<li><strong>Memory Use:</strong> 3</li>
+					</ul>
+				</li>
+			</ul>
+			<div data-role="collapsibleset">
+				<div data-role="collapsible" data-collapsed="true">
+					<h3>Skills</h3>
+					<ul data-role="listview">
+						<li>
+							<h3>Inherited Skills:</h3>
+							<ul>
+								<li><strong>Name:</strong> Destruction Cannon 1</li>
+								<li><strong>Type:</strong> Physical</li>
+								<li><strong>Dmg:</strong> 65 Dark Dmg</li>
+								<li><strong>Range:</strong> 1 Enemy</li>
+								<li><strong>Accuracy:</strong> 95%</li>
+								<li><strong>Learns at Level:</strong> 5</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<div data-role="collapsible" data-collapsed="true">
+					<h3>Digi-Evolution Data</h3>
+					<ul data-role="listview">
+						<li><h3>De-Digivolves To:</h3></li>
+						<li>
+							<a href="#kuramon">
+								<h4>Kuramon</h4>
+							</a>
+						</li>
+						<li><h3>Digivolves To:</h3></li>
+						<li>
+							<a href="#keramon">
+								<h4>Keramon</h4>
+								<ul>
+									<li><strong>Level:</strong> 9</li>
+									<li><strong>ATK:</strong> 20</li>
+									<li><strong>SPD:</strong> 20</li>
+								</ul>
+							</a>
+						</li>
+						<li>
+							<a href="#demidevimon">
+								<h4>DemiDevimon</h4>
+								<ul>
+									<li><strong>Level:</strong> 8</li>
+									<li><strong>SPD:</strong> 30</li>
+								</ul>
+							</a>
+						</li>
+						<li>
+							<a href="#b-agumon">
+								<h4>Agumon (Black)</h4>
+								<ul>
+									<li><strong>Level:</strong> 8</li>
+									<li><strong>ATK:</strong> 30</li>
+									<li><strong>DLC</strong></li>
+								</ul>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			
+			<br><br>
+			
+			
+		</div>
+		<div data-role="footer" data-theme="b" data-position="fixed">
+			<h4>KuroyukiDev &copy; 2018</h4>
+		</div>
+	</div>
+	
+<!--	..........................................................................................    -->
+	
+	<div data-role="page" id="tsunomon" data-theme="a">
+		<div data-role="header" data-theme="b" data-position="fixed">
+			<button onclick="location.href='#digidex'" class="ui-btn ui-btn-left ui-btn-b ui-btn-inline ui-icon-home ui-btn-icon-left ui-corner-all ui-btn-icon-notext"></button>
+			<h1>Tsunomon</h1>
+		</div>
+		<div data-role="content" class="ui-container">
+			
+			<ul data-role="listview">
+				<li>
+					<h3>Data:</h3>
+					<ul>
+						<li><strong>Type:</strong> Free</li>
+						<li><strong>Attribute:</strong> Earth</li>
+						<li><strong>Equip Slots:</strong> 0</li>
+						<li><strong>Memory Use:</strong> 3</li>
+					</ul>
+				</li>
+			</ul>
+			<div data-role="collapsibleset">
+				<div data-role="collapsible" data-collapsed="true">
+					<h3>Skills</h3>
+					<ul data-role="listview">
+						<li>
+							<h3>Inherited Skills:</h3>
+							<ul>
+								<li><strong>Name:</strong> Comet Hammer 1</li>
+								<li><strong>Type:</strong> Physical</li>
+								<li><strong>Dmg:</strong> 65 Earth Dmg</li>
+								<li><strong>Range:</strong> 1 Enemy</li>
+								<li><strong>Accuracy:</strong> 95%</li>
+								<li><strong>Learns at Level:</strong> 5</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<div data-role="collapsible" data-collapsed="true">
+					<h3>Digi-Evolution Data</h3>
+					<ul data-role="listview">
+						<li><h3>De-Digivolves To:</h3></li>
+						<li>
+							<a href="#punimon">
+								<h4>Punimon</h4>
+							</a>
+						</li>
+						<li><h3>Digivolves To:</h3></li>
+						<li>
+							<a href="#gabumon">
+								<h4>Gabumon</h4>
+								<ul>
+									<li><strong>Level:</strong> 7</li>
+									<li><strong>HP:</strong> 75</li>
+									<li><strong>ATK:</strong> 20</li>
+									<li><strong>SPD:</strong> 20</li>
+								</ul>
+							</a>
+						</li>
+						<li>
+							<a href="#goblimon">
+								<h4>Goblimon</h4>
+								<ul>
+									<li><strong>Level:</strong> 7</li>
+									<li><strong>ATK:</strong> 40</li>
+								</ul>
+							</a>
+						</li>
+						<li>
+							<a href="#veemon">
+								<h4>Veemon</h4>
+								<ul>
+									<li><strong>Level:</strong> 6</li>
+									<li><strong>ATK:</strong> 20</li>
+									<li><strong>SPD:</strong> 20</li>
+									<li><strong>CAM:</strong> 10%</li>
+								</ul>
+							</a>
+						</li>
+						<li>
+							<a href="#b-gabumon">
+								<h4>Gabumon (Black)</h4>
+								<ul>
+									<li><strong>Level:</strong> 6</li>
+									<li><strong>HP:</strong> 80</li>
+									<li><strong>ATK:</strong> 30</li>
+									<li><strong>DLC</strong></li>
+								</ul>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			
+			<br><br>
+			
+			
+		</div>
+		<div data-role="footer" data-theme="b" data-position="fixed">
+			<h4>KuroyukiDev &copy; 2018</h4>
+		</div>
+	</div>
+	
+<!--	..........................................................................................    -->
+	
+	<div data-role="page" id="wanyamon" data-theme="a">
+		<div data-role="header" data-theme="b" data-position="fixed">
+			<button onclick="location.href='#digidex'" class="ui-btn ui-btn-left ui-btn-b ui-btn-inline ui-icon-home ui-btn-icon-left ui-corner-all ui-btn-icon-notext"></button>
+			<h1>Wanyamon</h1>
+		</div>
+		<div data-role="content" class="ui-container">
+			
+			<ul data-role="listview">
+				<li>
+					<h3>Data:</h3>
+					<ul>
+						<li><strong>Type:</strong> Free</li>
+						<li><strong>Attribute:</strong> Wind</li>
+						<li><strong>Equip Slots:</strong> 0</li>
+						<li><strong>Memory Use:</strong> 3</li>
+					</ul>
+				</li>
+			</ul>
+			<div data-role="collapsibleset">
+				<div data-role="collapsible" data-collapsed="true">
+					<h3>Skills</h3>
+					<ul data-role="listview">
+						<li>
+							<h3>Inherited Skills:</h3>
+							<ul>
+								<li><strong>Name:</strong> Wind Claw 1</li>
+								<li><strong>Type:</strong> Physical</li>
+								<li><strong>Dmg:</strong> 65 Wind Dmg</li>
+								<li><strong>Range:</strong> 1 Enemy</li>
+								<li><strong>Accuracy:</strong> 95%</li>
+								<li><strong>Learns at Level:</strong> 5</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<div data-role="collapsible" data-collapsed="true">
+					<h3>Digi-Evolution Data</h3>
+					<ul data-role="listview">
+						<li><h3>De-Digivolves To:</h3></li>
+						<li>
+							<a href="#botamon">
+								<h4>Botamon</h4>
+							</a>
+						</li>
+						<li><h3>Digivolves To:</h3></li>
+						<li>
+							<a href="#dorumon">
+								<h4>Dorumon</h4>
+								<ul>
+									<li><strong>Level:</strong> 8</li>
+									<li><strong>ATK:</strong> 20</li>
+									<li><strong>SPD:</strong> 30</li>
+								</ul>
+							</a>
+						</li>
+						<li>
+							<a href="#gaomon">
+								<h4>Gaomon</h4>
+								<ul>
+									<li><strong>Level:</strong> 9</li>
+									<li><strong>ATK:</strong> 20</li>
+									<li><strong>SPD:</strong> 20</li>
+									<li><strong>CAM:</strong> 10%</li>
+								</ul>
+							</a>
+						</li>
+						<li>
+							<a href="#kudamon">
+								<h4>Kudamon</h4>
+								<ul>
+									<li><strong>Level:</strong> 8</li>
+									<li><strong>SP:</strong> 20</li>
+									<li><strong>INT:</strong> 20</li>
+								</ul>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			
+			<br><br>
+			
+			
+		</div>
+		<div data-role="footer" data-theme="b" data-position="fixed">
+			<h4>KuroyukiDev &copy; 2018</h4>
+		</div>
+	</div>
+	
+<!--	..........................................................................................    -->
+	
+	<div data-role="page" id="yokomon" data-theme="a">
+		<div data-role="header" data-theme="b" data-position="fixed">
+			<button onclick="location.href='#digidex'" class="ui-btn ui-btn-left ui-btn-b ui-btn-inline ui-icon-home ui-btn-icon-left ui-corner-all ui-btn-icon-notext"></button>
+			<h1>Yokomon</h1>
+		</div>
+		<div data-role="content" class="ui-container">
+			
+			<ul data-role="listview">
+				<li>
+					<h3>Data:</h3>
+					<ul>
+						<li><strong>Type:</strong> Free</li>
+						<li><strong>Attribute:</strong> Plant</li>
+						<li><strong>Equip Slots:</strong> 0</li>
+						<li><strong>Memory Use:</strong> 3</li>
+					</ul>
+				</li>
+			</ul>
+			<div data-role="collapsibleset">
+				<div data-role="collapsible" data-collapsed="true">
+					<h3>Skills</h3>
+					<ul data-role="listview">
+						<li>
+							<h3>Inherited Skills:</h3>
+							<ul>
+								<li><strong>Name:</strong> Crescent Leaf 1</li>
+								<li><strong>Type:</strong> Physical</li>
+								<li><strong>Dmg:</strong> 65 Plant Dmg</li>
+								<li><strong>Range:</strong> 1 Enemy</li>
+								<li><strong>Accuracy:</strong> 95%</li>
+								<li><strong>Learns at Level:</strong> 5</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<div data-role="collapsible" data-collapsed="true">
+					<h3>Digi-Evolution Data</h3>
+					<ul data-role="listview">
+						<li><h3>De-Digivolves To:</h3></li>
+						<li>
+							<a href="#pabumon">
+								<h4>Pabumon</h4>
+							</a>
+						</li>
+						<li><h3>Digivolves To:</h3></li>
+						<li>
+							<a href="#elecmon">
+								<h4>Elecmon</h4>
+								<ul>
+									<li><strong>Level:</strong> 7</li>
+									<li><strong>HP:</strong> 75</li>
+									<li><strong>SP:</strong> 75</li>
+									<li><strong>SPD:</strong> 20</li>
+								</ul>
+							</a>
+						</li>
+						<li>
+							<a href="#wormmmon">
+								<h4>Wormmon</h4>
+								<ul>
+									<li><strong>Level:</strong> 8</li>
+									<li><strong>DEF:</strong> 20</li>
+									<li><strong>CAM:</strong> 10%</li>
+								</ul>
+							</a>
+						</li>
+						<li>
+							<a href="#biyomon">
+								<h4>Biyomon</h4>
+								<ul>
+									<li><strong>Level:</strong> 8</li>
+									<li><strong>INT:</strong> 20</li>
+									<li><strong>SPD:</strong> 20</li>
+									<li><strong>CAM:</strong> 10%</li>
+								</ul>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			
+			<br><br>
+			
+			
+		</div>
+		<div data-role="footer" data-theme="b" data-position="fixed">
+			<h4>KuroyukiDev &copy; 2018</h4>
+		</div>
+	</div>
+	
+<!--	..........................................................................................    -->
+		
+<!--	Rookie    -->
+	
+<!--	..........................................................................................    -->
+		
+	<div data-role="page" id="agumon" data-theme="a">
+		<div data-role="header" data-theme="b" data-position="fixed">
+			<button onclick="location.href='#digidex'" class="ui-btn ui-btn-left ui-btn-b ui-btn-inline ui-icon-home ui-btn-icon-left ui-corner-all ui-btn-icon-notext"></button>
+			<h1>Agumon</h1>
+		</div>
+		<div data-role="content" class="ui-container">
+			
+			<ul data-role="listview">
+				<li>
+					<h3>Data:</h3>
+					<ul>
+						<li><strong>Type:</strong> Vaccine</li>
+						<li><strong>Attribute:</strong> Fire</li>
+						<li><strong>Equip Slots:</strong> 1</li>
+						<li><strong>Memory Use:</strong> 5</li>
+					</ul>
+				</li>
+			</ul>
+			<div data-role="collapsibleset">
+				<div data-role="collapsible" data-collapsed="true">
+					<h3>Skills</h3>
+					<ul data-role="listview">
+						<li>
+							<h3>Special Skill:</h3>
+							<hr>
+							<ul>
+								<li><strong>Name:</strong> Baby Flame</li>
+								<li><strong>Type:</strong> Physical</li>
+								<li><strong>Dmg:</strong> 70 Fire Dmg</li>
+								<li><strong>Range:</strong> 1 Enemy</li>
+								<li><strong>Learns at Level:</strong> 1</li>
+							</ul>
+						</li>
+						<li>
+							<h3>Support Skill:</h3>
+							<hr>
+							<ul>
+								<li><strong>Name:</strong> Dragon's Roar</li>
+								<li><strong>Effect:</strong><br> Increase damage dealt from fire skills by 15%</li>
+							</ul>
+						</li>
+						<li>
+							<h3>Inherited Skills:</h3>
+							<hr>
+							<ul>
+								<h3><strong>Name:</strong> Heavy Strike 1</h3>
+								<li><strong>Type:</strong> Physical</li>
+								<li><strong>Dmg:</strong> 70 Neutral Dmg</li>
+								<li><strong>Range:</strong> 1 Enemy</li>
+								<li><strong>Accuracy:</strong> 95%</li>
+								<li><strong>Learns at Level:</strong> 6</li>
+							</ul>
+							<hr>
+							<ul>
+								<h3><strong>Name:</strong> Attack Charge 1</h3>
+								<li><strong>Type:</strong> Support</li>
+								<li><strong>Range:</strong> 1 Ally</li>
+								<li><strong>Effect:</strong><br> Increase ATK by 10%</li>
+								<li><strong>Learns at Level:</strong> 12</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<div data-role="collapsible" data-collapsed="true">
+					<h3>Digi-Evolution Data</h3>
+					<ul data-role="listview">
+						<li><h3>De-Digivolves To:</h3></li>
+						<li>
+							<a href="#koromon">
+								<h4>Koromon</h4>
+							</a>
+						</li>
+						<li><h3>Digivolves To:</h3></li>
+						<li>
+							<a href="#sukamon">
+								<h4>Sukamon</h4>
+								<ul>
+									<li><strong>Level:</strong> 12</li>
+									<li><strong>HP:</strong> 150</li>
+									<li><strong>DEF:</strong> 40</li>
+								</ul>
+							</a>
+						</li>
+						<li>
+							<a href="#greymon">
+								<h4>Greymon</h4>
+								<ul>
+									<li><strong>Level:</strong> 16</li>
+									<li><strong>ATK:</strong> 55</li>
+									<li><strong>CAM:</strong> 50%</li>
+								</ul>
+							</a>
+						</li>
+						<li>
+							<a href="#geogreymon">
+								<h4>GeoGreymon</h4>
+								<ul>
+									<li><strong>Level:</strong> 15</li>
+									<li><strong>HP:</strong> 150</li>
+									<li><strong>ATK:</strong> 50</li>
+								</ul>
+							</a>
+						</li>
+						<li>
+							<a href="#meramon">
+								<h4>Meramon</h4>
+								<ul>
+									<li><strong>Level:</strong> 14</li>
+									<li><strong>ATK:</strong> 40</li>
+								</ul>
+							</a>
+						</li>
+						<li>
+							<a href="#tyrannomon">
+								<h4>Tyrannomon</h4>
+								<ul>
+									<li><strong>Level:</strong> 14</li>
+									<li><strong>HP:</strong> 150</li>
+									<li><strong>ATK:</strong> 40</li>
+								</ul>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			
+			<br><br>
+			
+			
+			
+		</div>
+		<div data-role="footer" data-theme="b" data-position="fixed">
+			<h4>KuroyukiDev &copy; 2018</h4>
+		</div>
+	</div>
+	
+<!--	..........................................................................................    -->
+		
+	<div data-role="page" id="b-agumon" data-theme="a">
+		<div data-role="header" data-theme="b" data-position="fixed">
+			<button onclick="location.href='#digidex'" class="ui-btn ui-btn-left ui-btn-b ui-btn-inline ui-icon-home ui-btn-icon-left ui-corner-all ui-btn-icon-notext"></button>
+			<h1>Agumon (Black)</h1>
+		</div>
+		<div data-role="content" class="ui-container">
+			
+			<ul data-role="listview">
+				<li>
+					<h3>Data:</h3>
+					<ul>
+						<li><strong>Type:</strong> Virus</li>
+						<li><strong>Attribute:</strong> Fire</li>
+						<li><strong>Equip Slots:</strong> 1</li>
+						<li><strong>Memory Use:</strong> 5</li>
+					</ul>
+				</li>
+			</ul>
+			<div data-role="collapsibleset">
+				<div data-role="collapsible" data-collapsed="true">
+					<h3>Skills</h3>
+					<ul data-role="listview">
+						<li>
+							<h3>Special Skill:</h3>
+							<hr>
+							<ul>
+								<li><strong>Name:</strong> Spitfire</li>
+								<li><strong>Type:</strong> Physical</li>
+								<li><strong>Dmg:</strong> 35 Fire Dmg</li>
+								<li><strong>Special Effect:</strong><br> 10% Chance to<br>increase own<br>ATK by 10%</li>
+								<li><strong>Range:</strong> All Enemies</li>
+								<li><strong>Learns at Level:</strong> 1</li>
+							</ul>
+						</li>
+						<li>
+							<h3>Support Skill:</h3>
+							<hr>
+							<ul>
+								<li><strong>Name:</strong> Dragon Rage</li>
+								<li><strong>Effect:</strong><br> Increase ATK by 15%</li>
+							</ul>
+						</li>
+						<li>
+							<h3>Inherited Skills:</h3>
+							<hr>
+							<ul>
+								<h3><strong>Name:</strong> Wolkenapalm 1</h3>
+								<li><strong>Type:</strong> Physical</li>
+								<li><strong>Dmg:</strong> 65 Fire Dmg</li>
+								<li><strong>Range:</strong> 1 Enemy</li>
+								<li><strong>Accuracy:</strong> 95%</li>
+								<li><strong>Learns at Level:</strong> 6</li>
+							</ul>
+							<hr>
+							<ul>
+								<h3><strong>Name:</strong> Guard Charge</h3>
+								<li><strong>Type:</strong> Support</li>
+								<li><strong>Range:</strong> 1 Ally</li>
+								<li><strong>Effect:</strong><br> Increase DEF by 10%</li>
+								<li><strong>Learns at Level:</strong> 12</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<div data-role="collapsible" data-collapsed="true">
+					<h3>Digi-Evolution Data</h3>
+					<ul data-role="listview">
+						<li><h3>De-Digivolves To:</h3></li>
+						<li>
+							<a href="#tsumemon">
+								<h4>Tsumemon</h4>
+							</a>
+						</li>
+						<li><h3>Digivolves To:</h3></li>
+						<li>
+							<a href="#growlmon">
+								<h4>Growlmon</h4>
+								<ul>
+									<li><strong>Level:</strong> 15</li>
+									<li><strong>ATK:</strong> 50</li>
+									<li><strong>SPD:</strong> 20</li>
+								</ul>
+							</a>
+						</li>
+						<li>
+							<a href="#cyclonemon">
+								<h4>Cyclonemon</h4>
+								<ul>
+									<li><strong>Level:</strong> 14</li>
+									<li><strong>ATK:</strong> 30</li>
+									<li><strong>DEF:</strong> 40</li>
+								</ul>
+							</a>
+						</li>
+						<li>
+							<a href="#tankmon">
+								<h4>Tankmon</h4>
+								<ul>
+									<li><strong>Level:</strong> 14</li>
+									<li><strong>DEF:</strong> 55</li>
+								</ul>
+							</a>
+						</li>
+						<li>
+							<a href="#tyrannomon">
+								<h4>Tyrannomon</h4>
+								<ul>
+									<li><strong>Level:</strong> 14</li>
+									<li><strong>HP:</strong> 150</li>
+									<li><strong>ATK:</strong> 40</li>
+								</ul>
+							</a>
+						</li>
+						<li>
+							<a href="#b-greymon">
+								<h4>Greymon (Black)</h4>
+								<ul>
+									<li><strong>Level:</strong> 16</li>
+									<li><strong>HP:</strong> 150</li>
+									<li><strong>ATK:</strong> 50</li>
+									<li><strong>DLC</strong></li>
+								</ul>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			
+		</div>
+		<div data-role="footer" data-theme="b" data-position="fixed">
+			<h4>KuroyukiDev &copy; 2018</h4>
+		</div>
+	</div>
+	
+<!--	..........................................................................................    -->
+		
+	<div data-role="page" id="armadillomon" data-theme="a">
+		<div data-role="header" data-theme="b" data-position="fixed">
+			<button onclick="location.href='#digidex'" class="ui-btn ui-btn-left ui-btn-b ui-btn-inline ui-icon-home ui-btn-icon-left ui-corner-all ui-btn-icon-notext"></button>
+			<h1>Armadillomon</h1>
+		</div>
+		<div data-role="content" class="ui-container">
+			
+			<ul data-role="listview">
+				<li>
+					<h3>Data:</h3>
+					<ul>
+						<li><strong>Type:</strong> Free</li>
+						<li><strong>Attribute:</strong> Earth</li>
+						<li><strong>Equip Slots:</strong> 1</li>
+						<li><strong>Memory Use:</strong> 4</li>
+					</ul>
+				</li>
+			</ul>
+			<div data-role="collapsibleset">
+				<div data-role="collapsible" data-collapsed="true">
+					<h3>Skills</h3>
+					<ul data-role="listview">
+						<li>
+							<h3>Special Skill:</h3>
+							<hr>
+							<ul>
+								<li><strong>Name:</strong> Rolling Stone</li>
+								<li><strong>Type:</strong> Physical</li>
+								<li><strong>Dmg:</strong> 60 Earth Dmg</li>
+								<li><strong>Special Effect:</strong><br> 10% Chance to<br>increase own<br>DEF by 10%</li>
+								<li><strong>Range:</strong> 1 Enemy</li>
+								<li><strong>Learns at Level:</strong> 1</li>
+							</ul>
+						</li>
+						<li>
+							<h3>Support Skill:</h3>
+							<hr>
+							<ul>
+								<li><strong>Name:</strong> Iron Wall Defense</li>
+								<li><strong>Effect:</strong><br> Increase DEF by 15%</li>
+							</ul>
+						</li>
+						<li>
+							<h3>Inherited Skills:</h3>
+							<hr>
+							<ul>
+								<h3><strong>Name:</strong> Grand Rock 1</h3>
+								<li><strong>Type:</strong> Magic</li>
+								<li><strong>Dmg:</strong> 55 Earth Dmg</li>
+								<li><strong>Range:</strong> 1 Enemy</li>
+								<li><strong>Accuracy:</strong> 95%</li>
+								<li><strong>Learns at Level:</strong> 6</li>
+							</ul>
+							<hr>
+							<ul>
+								<h3><strong>Name:</strong> Shock</h3>
+								<li><strong>Type:</strong> Physical</li>
+								<li><strong>Dmg:</strong> 40 Earth Dmg</li>
+								<li><strong>Special Effect:</strong><br> Inflicts Stun</li>
+								<li><strong>Range:</strong> 1 Enemy</li>
+								<li><strong>Learns at Level:</strong> 12</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<div data-role="collapsible" data-collapsed="true">
+					<h3>Digi-Evolution Data</h3>
+					<ul data-role="listview">
+						<li><h3>De-Digivolves To:</h3></li>
+						<li>
+							<a href="#nyaromon">
+								<h4>Nyaromon</h4>
+							</a>
+						</li>
+						<li><h3>Digivolves To:</h3></li>
+						<li>
+							<a href="#ankylomon">
+								<h4>Ankylomon</h4>
+								<ul>
+									<li><strong>Level:</strong> 15</li>
+									<li><strong>HP:</strong> 50</li>
+									<li><strong>DEF:</strong> 40</li>
+								</ul>
+							</a>
+						</li>
+						<li>
+							<a href="#cyclonemon">
+								<h4>Cyclonemon</h4>
+								<ul>
+									<li><strong>Level:</strong> 14</li>
+									<li><strong>ATK:</strong> 30</li>
+									<li><strong>DEF:</strong> 40</li>
+								</ul>
+							</a>
+						</li>
+						<li>
+							<a href="#goldnumemon">
+								<h4>GoldNumemon</h4>
+								<ul>
+									<li><strong>Level:</strong> 18</li>
+									<li><strong>ABI:</strong> 5</li>
+								</ul>
+							</a>
+						</li>
+						<li>
+							<a href="#tankmon">
+								<h4>Tankmon</h4>
+								<ul>
+									<li><strong>Level:</strong> 14</li>
+									<li><strong>DEF:</strong> 55</li>
+								</ul>
+							</a>
+						</li>
+						<li>
+							<a href="#geremon">
+								<h4>Geremon</h4>
+								<ul>
+									<li><strong>Level:</strong> 12</li>
+									<li><strong>HP:</strong> 130</li>
+									<li><strong>SP:</strong> 25</li>
+									<li><strong>DEF:</strong> 40</li>
+								</ul>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			
+		</div>
+		<div data-role="footer" data-theme="b" data-position="fixed">
+			<h4>KuroyukiDev &copy; 2018</h4>
+		</div>
+	</div>
+	
+<!--	..........................................................................................    -->
+		
+	<div data-role="page" id="betamon" data-theme="a">
+		<div data-role="header" data-theme="b" data-position="fixed">
+			<button onclick="location.href='#digidex'" class="ui-btn ui-btn-left ui-btn-b ui-btn-inline ui-icon-home ui-btn-icon-left ui-corner-all ui-btn-icon-notext"></button>
+			<h1>Betamon</h1>
+		</div>
+		<div data-role="content" class="ui-container">
+			
+			<ul data-role="listview">
+				<li>
+					<h3>Data:</h3>
+					<ul>
+						<li><strong>Type:</strong> Virus</li>
+						<li><strong>Attribute:</strong> Water</li>
+						<li><strong>Equip Slots:</strong> 1</li>
+						<li><strong>Memory Use:</strong> 4</li>
+					</ul>
+				</li>
+			</ul>
+			<div data-role="collapsibleset">
+				<div data-role="collapsible" data-collapsed="true">
+					<h3>Skills</h3>
+					<ul data-role="listview">
+						<li>
+							<h3>Special Skill:</h3>
+							<hr>
+							<ul>
+								<li><strong>Name:</strong> Dengeki Birin</li>
+								<li><strong>Type:</strong> Magic</li>
+								<li><strong>Dmg:</strong> 55 Thunder Dmg</li>
+								<li><strong>Special Effect:</strong><br> 10% Chance to<br>inflict paralyze</li>
+								<li><strong>Range:</strong> 1 Enemy</li>
+								<li><strong>Learns at Level:</strong> 1</li>
+							</ul>
+						</li>
+						<li>
+							<h3>Support Skill:</h3>
+							<hr>
+							<ul>
+								<li><strong>Name:</strong> Mystery Scale</li>
+								<li><strong>Effect:</strong><br> Reduce efficiency of<br>negative effects<br>by 15%</li>
+							</ul>
+						</li>
+						<li>
+							<h3>Inherited Skills:</h3>
+							<hr>
+							<ul>
+								<h3><strong>Name:</strong> Ice Archery 1</h3>
+								<li><strong>Type:</strong> Physical</li>
+								<li><strong>Dmg:</strong> 65 Water Dmg</li>
+								<li><strong>Range:</strong> 1 Enemy</li>
+								<li><strong>Accuracy:</strong> 95%</li>
+								<li><strong>Learns at Level:</strong> 6</li>
+							</ul>
+							<hr>
+							<ul>
+								<h3><strong>Name:</strong> Anti-Paralysis</h3>
+								<li><strong>Type:</strong> Support</li>
+								<li><strong>Range:</strong> 1 Ally</li>
+								<li><strong>Effect:</strong><br><strong> > </strong>Recover Paralysis<br><strong> > </strong>Restore some HP</li>
+								<li><strong>Learns at Level:</strong> 12</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<div data-role="collapsible" data-collapsed="true">
+					<h3>Digi-Evolution Data</h3>
+					<ul data-role="listview">
+						<li><h3>De-Digivolves To:</h3></li>
+						<li>
+							<a href="#bukamon">
+								<h4>Bukamon</h4>
+							</a>
+						</li>
+						<li><h3>Digivolves To:</h3></li>
+						<li>
+							<a href="#gekolomon">
+								<h4>Gekomon</h4>
+								<ul>
+									<li><strong>Level:</strong> 14</li>
+									<li><strong>SP:</strong> 40</li>
+									<li><strong>INT:</strong> 40</li>
+								</ul>
+							</a>
+						</li>
+						<li>
+							<a href="#numemon">
+								<h4>Numemon</h4>
+								<ul>
+									<li><strong>Level:</strong> 12</li>
+									<li><strong>HP:</strong> 150</li>
+									<li><strong>DEF:</strong> 40</li>
+								</ul>
+							</a>
+						</li>
+						<li>
+							<a href="#seadramon">
+								<h4>Seadramon</h4>
+								<ul>
+									<li><strong>Level:</strong> 14</li>
+									<li><strong>DEF:</strong> 30</li>
+									<li><strong>INT:</strong> 40</li>
+								</ul>
+							</a>
+						</li>
+						<li>
+							<a href="#shellnumemon">
+								<h4>KaratsukiNumemon/<br>ShellNumemon</h4>
+								<ul>
+									<li><strong>Level:</strong> 14</li>
+									<li><strong>HP:</strong> 150</li>
+									<li><strong>DEF:</strong> 55</li>
+								</ul>
+							</a>
+						</li>
+						<li>
+							<a href="#vegiemon">
+								<h4>Vegiemon</h4>
+								<ul>
+									<li><strong>Level:</strong> 12</li>
+									<li><strong>HP:</strong> 300</li>
+								</ul>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			
+		</div>
+		<div data-role="footer" data-theme="b" data-position="fixed">
+			<h4>KuroyukiDev &copy; 2018</h4>
+		</div>
+	</div>
+	
+<!--	..........................................................................................    -->
+		
+	<div data-role="page" id="biyomon" data-theme="a">
+		<div data-role="header" data-theme="b" data-position="fixed">
+			<button onclick="location.href='#digidex'" class="ui-btn ui-btn-left ui-btn-b ui-btn-inline ui-icon-home ui-btn-icon-left ui-corner-all ui-btn-icon-notext"></button>
+			<h1>Biyomon</h1>
+		</div>
+		<div data-role="content" class="ui-container">
+			
+			<ul data-role="listview">
+				<li>
+					<h3>Data:</h3>
+					<ul>
+						<li><strong>Type:</strong> Virus</li>
+						<li><strong>Attribute:</strong> Water</li>
+						<li><strong>Equip Slots:</strong> 1</li>
+						<li><strong>Memory Use:</strong> 4</li>
+					</ul>
+				</li>
+			</ul>
+			<div data-role="collapsibleset">
+				<div data-role="collapsible" data-collapsed="true">
+					<h3>Skills</h3>
+					<ul data-role="listview">
+						<li>
+							<h3>Special Skill:</h3>
+							<hr>
+							<ul>
+								<li><strong>Name:</strong> Dengeki Birin</li>
+								<li><strong>Type:</strong> Magic</li>
+								<li><strong>Dmg:</strong> 55 Thunder Dmg</li>
+								<li><strong>Special Effect:</strong><br> 10% Chance to<br>inflict paralyze</li>
+								<li><strong>Range:</strong> 1 Enemy</li>
+								<li><strong>Learns at Level:</strong> 1</li>
+							</ul>
+						</li>
+						<li>
+							<h3>Support Skill:</h3>
+							<hr>
+							<ul>
+								<li><strong>Name:</strong> Mystery Scale</li>
+								<li><strong>Effect:</strong><br> Reduce efficiency of<br>negative effects<br>by 15%</li>
+							</ul>
+						</li>
+						<li>
+							<h3>Inherited Skills:</h3>
+							<hr>
+							<ul>
+								<h3><strong>Name:</strong> Ice Archery 1</h3>
+								<li><strong>Type:</strong> Physical</li>
+								<li><strong>Dmg:</strong> 65 Water Dmg</li>
+								<li><strong>Range:</strong> 1 Enemy</li>
+								<li><strong>Accuracy:</strong> 95%</li>
+								<li><strong>Learns at Level:</strong> 6</li>
+							</ul>
+							<hr>
+							<ul>
+								<h3><strong>Name:</strong> Anti-Paralysis</h3>
+								<li><strong>Type:</strong> Support</li>
+								<li><strong>Range:</strong> 1 Ally</li>
+								<li><strong>Effect:</strong><br><strong> > </strong>Recover Paralysis<br><strong> > </strong>Restore some HP</li>
+								<li><strong>Learns at Level:</strong> 12</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<div data-role="collapsible" data-collapsed="true">
+					<h3>Digi-Evolution Data</h3>
+					<ul data-role="listview">
+						<li><h3>De-Digivolves To:</h3></li>
+						<li>
+							<a href="#bukamon">
+								<h4>Bukamon</h4>
+							</a>
+						</li>
+						<li><h3>Digivolves To:</h3></li>
+						<li>
+							<a href="#gekolomon">
+								<h4>Gekomon</h4>
+								<ul>
+									<li><strong>Level:</strong> 14</li>
+									<li><strong>SP:</strong> 40</li>
+									<li><strong>INT:</strong> 40</li>
+								</ul>
+							</a>
+						</li>
+						<li>
+							<a href="#numemon">
+								<h4>Numemon</h4>
+								<ul>
+									<li><strong>Level:</strong> 12</li>
+									<li><strong>HP:</strong> 150</li>
+									<li><strong>DEF:</strong> 40</li>
+								</ul>
+							</a>
+						</li>
+						<li>
+							<a href="#seadramon">
+								<h4>Seadramon</h4>
+								<ul>
+									<li><strong>Level:</strong> 14</li>
+									<li><strong>DEF:</strong> 30</li>
+									<li><strong>INT:</strong> 40</li>
+								</ul>
+							</a>
+						</li>
+						<li>
+							<a href="#shellnumemon">
+								<h4>KaratsukiNumemon/<br>ShellNumemon</h4>
+								<ul>
+									<li><strong>Level:</strong> 14</li>
+									<li><strong>HP:</strong> 150</li>
+									<li><strong>DEF:</strong> 55</li>
+								</ul>
+							</a>
+						</li>
+						<li>
+							<a href="#vegiemon">
+								<h4>Vegiemon</h4>
+								<ul>
+									<li><strong>Level:</strong> 12</li>
+									<li><strong>HP:</strong> 300</li>
+								</ul>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			
+		</div>
+		<div data-role="footer" data-theme="b" data-position="fixed">
+			<h4>KuroyukiDev &copy; 2018</h4>
+		</div>
+	</div>
+	
+<!--	..........................................................................................    -->
+		
+	<div data-role="page" id="demidevimon" data-theme="a">
+		<div data-role="header" data-theme="b" data-position="fixed">
+			<button onclick="location.href='#digidex'" class="ui-btn ui-btn-left ui-btn-b ui-btn-inline ui-icon-home ui-btn-icon-left ui-corner-all ui-btn-icon-notext"></button>
+			<h1>DemiDevimon</h1>
+		</div>
+		<div data-role="content" class="ui-container">
+			
+			
+		</div>
+		<div data-role="footer" data-theme="b" data-position="fixed">
+			<h4>KuroyukiDev &copy; 2018</h4>
+		</div>
+	</div>
+	
+<!--	..........................................................................................    -->
+		
+	<div data-role="page" id="dorumon" data-theme="a">
+		<div data-role="header" data-theme="b" data-position="fixed">
+			<button onclick="location.href='#digidex'" class="ui-btn ui-btn-left ui-btn-b ui-btn-inline ui-icon-home ui-btn-icon-left ui-corner-all ui-btn-icon-notext"></button>
+			<h1>Dorumon</h1>
+		</div>
+		<div data-role="content" class="ui-container">
+			
+			
+		</div>
+		<div data-role="footer" data-theme="b" data-position="fixed">
+			<h4>KuroyukiDev &copy; 2018</h4>
+		</div>
+	</div>
+	
+<!--	..........................................................................................    -->
+		
+	<div data-role="page" id="elecmon" data-theme="a">
+		<div data-role="header" data-theme="b" data-position="fixed">
+			<button onclick="location.href='#digidex'" class="ui-btn ui-btn-left ui-btn-b ui-btn-inline ui-icon-home ui-btn-icon-left ui-corner-all ui-btn-icon-notext"></button>
+			<h1>Elecmon</h1>
+		</div>
+		<div data-role="content" class="ui-container">
+			
+			
+		</div>
+		<div data-role="footer" data-theme="b" data-position="fixed">
+			<h4>KuroyukiDev &copy; 2018</h4>
+		</div>
+	</div>
+	
+<!--	..........................................................................................    -->
+		
+	<div data-role="page" id="falcomon" data-theme="a">
+		<div data-role="header" data-theme="b" data-position="fixed">
+			<button onclick="location.href='#digidex'" class="ui-btn ui-btn-left ui-btn-b ui-btn-inline ui-icon-home ui-btn-icon-left ui-corner-all ui-btn-icon-notext"></button>
+			<h1>Falcomon</h1>
+		</div>
+		<div data-role="content" class="ui-container">
+			
+			
+		</div>
+		<div data-role="footer" data-theme="b" data-position="fixed">
+			<h4>KuroyukiDev &copy; 2018</h4>
+		</div>
+	</div>
+	
+<!--	..........................................................................................    -->
+		
+	<div data-role="page" id="gabumon" data-theme="a">
+		<div data-role="header" data-theme="b" data-position="fixed">
+			<button onclick="location.href='#digidex'" class="ui-btn ui-btn-left ui-btn-b ui-btn-inline ui-icon-home ui-btn-icon-left ui-corner-all ui-btn-icon-notext"></button>
+			<h1>Gabumon</h1>
+		</div>
+		<div data-role="content" class="ui-container">
+			
+			
+		</div>
+		<div data-role="footer" data-theme="b" data-position="fixed">
+			<h4>KuroyukiDev &copy; 2018</h4>
+		</div>
+	</div>
+	
+<!--	..........................................................................................    -->
+		
+	<div data-role="page" id="b-gabumon" data-theme="a">
+		<div data-role="header" data-theme="b" data-position="fixed">
+			<button onclick="location.href='#digidex'" class="ui-btn ui-btn-left ui-btn-b ui-btn-inline ui-icon-home ui-btn-icon-left ui-corner-all ui-btn-icon-notext"></button>
+			<h1>Gabumon (Black)</h1>
+		</div>
+		<div data-role="content" class="ui-container">
+			
+			
+		</div>
+		<div data-role="footer" data-theme="b" data-position="fixed">
+			<h4>KuroyukiDev &copy; 2018</h4>
+		</div>
+	</div>
+	
+<!--	..........................................................................................    -->
+		
+	<div data-role="page" id="gaomon" data-theme="a">
+		<div data-role="header" data-theme="b" data-position="fixed">
+			<button onclick="location.href='#digidex'" class="ui-btn ui-btn-left ui-btn-b ui-btn-inline ui-icon-home ui-btn-icon-left ui-corner-all ui-btn-icon-notext"></button>
+			<h1>Gaomon</h1>
+		</div>
+		<div data-role="content" class="ui-container">
+			
+			
+		</div>
+		<div data-role="footer" data-theme="b" data-position="fixed">
+			<h4>KuroyukiDev &copy; 2018</h4>
+		</div>
+	</div>
+	
+<!--	..........................................................................................    -->
+		
+	<div data-role="page" id="gazimon" data-theme="a">
+		<div data-role="header" data-theme="b" data-position="fixed">
+			<button onclick="location.href='#digidex'" class="ui-btn ui-btn-left ui-btn-b ui-btn-inline ui-icon-home ui-btn-icon-left ui-corner-all ui-btn-icon-notext"></button>
+			<h1>Gazimon</h1>
+		</div>
+		<div data-role="content" class="ui-container">
+			
+			
+		</div>
+		<div data-role="footer" data-theme="b" data-position="fixed">
+			<h4>KuroyukiDev &copy; 2018</h4>
+		</div>
+	</div>
+	
+<!--	..........................................................................................    -->
+		
+	<div data-role="page" id="goblimon" data-theme="a">
+		<div data-role="header" data-theme="b" data-position="fixed">
+			<button onclick="location.href='#digidex'" class="ui-btn ui-btn-left ui-btn-b ui-btn-inline ui-icon-home ui-btn-icon-left ui-corner-all ui-btn-icon-notext"></button>
+			<h1>Goblimon</h1>
+		</div>
+		<div data-role="content" class="ui-container">
+			
+			
+		</div>
+		<div data-role="footer" data-theme="b" data-position="fixed">
+			<h4>KuroyukiDev &copy; 2018</h4>
+		</div>
+	</div>
+	
+<!--	..........................................................................................    -->
+		
+	<div data-role="page" id="gomamon" data-theme="a">
+		<div data-role="header" data-theme="b" data-position="fixed">
+			<button onclick="location.href='#digidex'" class="ui-btn ui-btn-left ui-btn-b ui-btn-inline ui-icon-home ui-btn-icon-left ui-corner-all ui-btn-icon-notext"></button>
+			<h1>Gomamon</h1>
+		</div>
+		<div data-role="content" class="ui-container">
+			
+			
+		</div>
+		<div data-role="footer" data-theme="b" data-position="fixed">
+			<h4>KuroyukiDev &copy; 2018</h4>
+		</div>
+	</div>
+	
+<!--	..........................................................................................    -->
+		
+	<div data-role="page" id="gotsumon" data-theme="a">
+		<div data-role="header" data-theme="b" data-position="fixed">
+			<button onclick="location.href='#digidex'" class="ui-btn ui-btn-left ui-btn-b ui-btn-inline ui-icon-home ui-btn-icon-left ui-corner-all ui-btn-icon-notext"></button>
+			<h1>Gotsumon</h1>
+		</div>
+		<div data-role="content" class="ui-container">
+			
+			
+		</div>
+		<div data-role="footer" data-theme="b" data-position="fixed">
+			<h4>KuroyukiDev &copy; 2018</h4>
+		</div>
+	</div>
+	
+<!--	..........................................................................................    -->
+		
+	<div data-role="page" id="guilmon" data-theme="a">
+		<div data-role="header" data-theme="b" data-position="fixed">
+			<button onclick="location.href='#digidex'" class="ui-btn ui-btn-left ui-btn-b ui-btn-inline ui-icon-home ui-btn-icon-left ui-corner-all ui-btn-icon-notext"></button>
+			<h1>Guilmon</h1>
+		</div>
+		<div data-role="content" class="ui-container">
+			
+			
+		</div>
+		<div data-role="footer" data-theme="b" data-position="fixed">
+			<h4>KuroyukiDev &copy; 2018</h4>
+		</div>
+	</div>
+	
+<!--	..........................................................................................    -->
+		
+	<div data-role="page" id="hackmon" data-theme="a">
+		<div data-role="header" data-theme="b" data-position="fixed">
+			<button onclick="location.href='#digidex'" class="ui-btn ui-btn-left ui-btn-b ui-btn-inline ui-icon-home ui-btn-icon-left ui-corner-all ui-btn-icon-notext"></button>
+			<h1>Hackmon</h1>
+		</div>
+		<div data-role="content" class="ui-container">
+			
+			
+		</div>
+		<div data-role="footer" data-theme="b" data-position="fixed">
+			<h4>KuroyukiDev &copy; 2018</h4>
+		</div>
+	</div>
+	
+<!--	..........................................................................................    -->
+		
+	<div data-role="page" id="hagurumon" data-theme="a">
+		<div data-role="header" data-theme="b" data-position="fixed">
+			<button onclick="location.href='#digidex'" class="ui-btn ui-btn-left ui-btn-b ui-btn-inline ui-icon-home ui-btn-icon-left ui-corner-all ui-btn-icon-notext"></button>
+			<h1>Hagurumon</h1>
+		</div>
+		<div data-role="content" class="ui-container">
+			
+			
+		</div>
+		<div data-role="footer" data-theme="b" data-position="fixed">
+			<h4>KuroyukiDev &copy; 2018</h4>
+		</div>
+	</div>
+	
+<!--	..........................................................................................    -->
+		
+	<div data-role="page" id="hawkmon" data-theme="a">
+		<div data-role="header" data-theme="b" data-position="fixed">
+			<button onclick="location.href='#digidex'" class="ui-btn ui-btn-left ui-btn-b ui-btn-inline ui-icon-home ui-btn-icon-left ui-corner-all ui-btn-icon-notext"></button>
+			<h1>Hawkmon</h1>
+		</div>
+		<div data-role="content" class="ui-container">
+			
+			
+		</div>
+		<div data-role="footer" data-theme="b" data-position="fixed">
+			<h4>KuroyukiDev &copy; 2018</h4>
+		</div>
+	</div>
+	
+<!--	..........................................................................................    -->
+		
+	<div data-role="page" id="impmon" data-theme="a">
+		<div data-role="header" data-theme="b" data-position="fixed">
+			<button onclick="location.href='#digidex'" class="ui-btn ui-btn-left ui-btn-b ui-btn-inline ui-icon-home ui-btn-icon-left ui-corner-all ui-btn-icon-notext"></button>
+			<h1>Impmon</h1>
+		</div>
+		<div data-role="content" class="ui-container">
+			
+			
+		</div>
+		<div data-role="footer" data-theme="b" data-position="fixed">
+			<h4>KuroyukiDev &copy; 2018</h4>
+		</div>
+	</div>
+	
+<!--	..........................................................................................    -->
+		
+	<div data-role="page" id="keramon" data-theme="a">
+		<div data-role="header" data-theme="b" data-position="fixed">
+			<button onclick="location.href='#digidex'" class="ui-btn ui-btn-left ui-btn-b ui-btn-inline ui-icon-home ui-btn-icon-left ui-corner-all ui-btn-icon-notext"></button>
+			<h1>Keramon</h1>
+		</div>
+		<div data-role="content" class="ui-container">
+			
+			
+		</div>
+		<div data-role="footer" data-theme="b" data-position="fixed">
+			<h4>KuroyukiDev &copy; 2018</h4>
+		</div>
+	</div>
+	
+<!--	..........................................................................................    -->
+		
+	<div data-role="page" id="kudamon" data-theme="a">
+		<div data-role="header" data-theme="b" data-position="fixed">
+			<button onclick="location.href='#digidex'" class="ui-btn ui-btn-left ui-btn-b ui-btn-inline ui-icon-home ui-btn-icon-left ui-corner-all ui-btn-icon-notext"></button>
+			<h1>Kudamon</h1>
+		</div>
+		<div data-role="content" class="ui-container">
+			
+			
+		</div>
+		<div data-role="footer" data-theme="b" data-position="fixed">
+			<h4>KuroyukiDev &copy; 2018</h4>
+		</div>
+	</div>
+	
+<!--	..........................................................................................    -->
+	
+	
+	
+	
+	<script type="text/javascript" src="cordova.js"></script>
+	<script type="text/javascript" src="/scripts/bundle.js"></script>
+	
+</body>
+</html>
