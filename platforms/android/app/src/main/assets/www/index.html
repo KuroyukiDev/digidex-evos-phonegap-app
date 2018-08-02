@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>PhoneGap Boilerplate App</title>
+	<meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+	
+	<link rel="stylesheet" href="scripts/jqm/jquery.mobile.icons.min.css" />
+	<link rel="stylesheet" href="scripts/jqm/jquery.mobile.min.css" />
+	<script src="scripts/jquery/jquery-1.11.1.min.js"></script>
+	<script src="scripts/jqm/jquery.mobile.min.js"></script>
+	
+	<link rel="stylesheet" href="/scripts/css/style.css" />
+	
+</head>
+<body>
+	
+	<div data-role="page" data-theme="a">
+		<div data-role="header" data-theme="b">
+			<h1>Boilerplate</h1>
+		</div>
+		<div data-role="content" class="ui-container">
+			<h3 class="text-center" id="app-title"></h3>
+			<p id="app-body-text"></p>
+			<p class="text-center" id="app-author"></p>
+			
+			<button onclick="location.href='index.html#digidex'">To DigiDex</button>
+		</div>
+		<div data-role="footer" data-theme="b" data-position="fixed">
+			<h4>KuroyukiDev &copy; 2018</h4>
+		</div>
+	</div>
+	
+	<div data-role="page" id="digidex" data-theme="a" data-position="fixed">
+		<div data-role="header" data-theme="b">
+			<h1>Digidex</h1>
+		</div>
+		<div data-role="content" class="ui-container">
+			
+			<h2 class="text-center">Stage Groups</h2>
+			
+			<div data-role="collapsibleset">
+				
+				<div data-role="collapsible" data-collapsed="true">
+					<h3>Baby</h3>
+					<ul id="babyList" data-role="listview">
+						<li><a href="#botamon">Botamon</a></li>
+						<li><a href="#kuramon">Kuramon</a></li>
+						<li><a href="#pabumon">Pabumon</a></li>
+						<li><a href="#poyomon">Poyomon</a></li>
+						<li><a href="#punimon">Punimon</a></li>
+					</ul>
+				</div>
+				
+				<div data-role="collapsible" data-collapsed="true">
+					<h3>In Training</h3>
+					<ul id="inTrainingList" data-role="listview">
+						<li><a href="#bukamon">Bukamon</a></li>
+						<li><a href="#koromon">Koromon</a></li>
+						<li><a href="#motimon">Motimon</a></li>
+						<li><a href="#nyaromon">Nyaromon</a></li>
+						<li><a href="#pagumon">Pagumon</a></li>
+						<li><a href="#tanemon">Tanemon</a></li>
+						<li><a href="#tokomon">Tokomon</a></li>
+						<li><a href="#tsumemon">Tsumemon</a></li>
+						<li><a href="#tsunomon">Tsunomon</a></li>
+						<li><a href="#wanyamon">Wanyamon</a></li>
+						<li><a href="#yokomon">Yokomon</a></li>
+					</ul>
+				</div>
+				
+				<div data-role="collapsible" data-collapsed="true">
+					<h3>Rookie</h3>
+					<ul data-role="listview">
+						<li><a href="#agumon">Agumon</a></li>
+						<li><a href="#b-agumon">Agumon (Black)</a></li>
+						<li><a href="#armadillomon">Armadillomon</a></li>
+						<li><a href="#betamon">Betamon</a></li>
+						<li><a href="#biyomon">Biyomon</a></li>
+						<li><a href="#demidevimon">DemiDevimon</a></li>
+						<li><a href="#dorumon">Dorumon</a></li>
+						<li><a href="#elecmon">Elecmon</a></li>
+						<li><a href="#falcomon">Falcomon</a></li>
+						<li><a href="#gabumon">Gabumon</a></li>
+						<li><a href="#b-gabumon">Gabumon (Black)</a></li>
+						<li><a href="#gaomon">Gaomon</a></li>
+						<li><a href="#gazimon">Gazimon</a></li>
+						<li><a href="#goblimon">Goblimon</a></li>
+						<li><a href="#gomamon">Gomamon</a></li>
+						<li><a href="#gotsumon">Gotsumon</a></li>
+						<li><a href="#guilmon">Guilmon</a></li>
+						<li><a href="#hackmon">Hackmon</a></li>
+						<li><a href="#hagurumon">Hagurumon</a></li>
+						<li><a href="#hawkmon">Hawkmon</a></li>
+						<li><a href="#impmon">Impmon</a></li>
+						<li><a href="#keramon">Keramon</a></li>
+						<li><a href="#kudamon">Kudamon</a></li>
+<!--						<li><a href="index.html#mon">mon</a></li>-->
+					</ul>
+				</div>
+				
+				<div data-role="collapsible" data-collapsed="true">
+					<h3>Champion</h3>
+					<ul data-role="listview">
+<!--						<li><a href="index.html#mon">mon</a></li>-->
+					</ul>
+				</div>
+
+				<div data-role="collapsible" data-collapsed="true">
+					<h3>Ultimate</h3>
+					<ul data-role="listview">
+<!--						<li><a href="index.html#mon">mon</a></li>-->
+					</ul>
+				</div>
+
+				<div data-role="collapsible" data-collapsed="true">
+					<h3>Mega</h3>
+					<ul data-role="listview">
+<!--						<li><a href="index.html#mon">mon</a></li>-->
+					</ul>
+				</div>
+			</div>
+			
+		</div>
+		<div data-role="footer" data-theme="b" data-position="fixed">
+			<h4>KuroyukiDev &copy; 2018</h4>
+		</div>
+	</div>
+
+<!--	..........................................................................................    -->
+	
+<!--	Baby    -->
+	
+<!--	..........................................................................................    -->
+	
+	<div data-role="page" id="botamon" data-theme="a">
+		<div data-role="header" data-theme="b">
+			<h1>Botamon</h1>
+		</div>
+		<div data-role="content" class="ui-container">
+			
+			<button onclick="location.href='index.html#digidex'">To DigiDex</button>
+			
+		</div>
+		<div data-role="footer" data-theme="b" data-position="fixed">
+			<h4>KuroyukiDev &copy; 2018</h4>
+		</div>
+	</div>
+	
+<!--	..........................................................................................    -->
+	
+	<div data-role="page" id="kuramon" data-theme="a">
+		<div data-role="header" data-theme="b">
+			<h1>Kuramon</h1>
+		</div>
+		<div data-role="content" class="ui-container">
+			
+			<button onclick="location.href='index.html#digidex'">To DigiDex</button>
+			
+		</div>
+		<div data-role="footer" data-theme="b" data-position="fixed">
+			<h4>KuroyukiDev &copy; 2018</h4>
+		</div>
+	</div>
+	
+<!--	..........................................................................................    -->
+	
+	<div data-role="page" id="pabumon" data-theme="a">
+		<div data-role="header" data-theme="b">
+			<h1>Pabumon</h1>
+		</div>
+		<div data-role="content" class="ui-container">
+			
+			<button onclick="location.href='index.html#digidex'">To DigiDex</button>
+			
+		</div>
+		<div data-role="footer" data-theme="b" data-position="fixed">
+			<h4>KuroyukiDev &copy; 2018</h4>
+		</div>
+	</div>
+	
+<!--	..........................................................................................    -->
+	
+	<div data-role="page" id="poyomon" data-theme="a">
+		<div data-role="header" data-theme="b">
+			<h1>Poyomon</h1>
+		</div>
+		<div data-role="content" class="ui-container">
+			
+			<button onclick="location.href='index.html#digidex'">To DigiDex</button>
+			
+		</div>
+		<div data-role="footer" data-theme="b" data-position="fixed">
+			<h4>KuroyukiDev &copy; 2018</h4>
+		</div>
+	</div>
+	
+<!--	..........................................................................................    -->
+	
+	<div data-role="page" id="punimon" data-theme="a">
+		<div data-role="header" data-theme="b">
+			<h1>Punimon</h1>
+		</div>
+		<div data-role="content" class="ui-container">
+			
+			<button onclick="location.href='index.html#digidex'">To DigiDex</button>
+			
+		</div>
+		<div data-role="footer" data-theme="b" data-position="fixed">
+			<h4>KuroyukiDev &copy; 2018</h4>
+		</div>
+	</div>
+	
+<!--	..........................................................................................    -->
+	
+<!--	In Training    -->
+	
+<!--	..........................................................................................    -->
+	
+	<div data-role="page" id="bukamon" data-theme="a">
+		<div data-role="header" data-theme="b">
+			<h1>Bukamon</h1>
+		</div>
+		<div data-role="content" class="ui-container">
+			
+			<button onclick="location.href='index.html#digidex'">To DigiDex</button>
+			
+		</div>
+		<div data-role="footer" data-theme="b" data-position="fixed">
+			<h4>KuroyukiDev &copy; 2018</h4>
+		</div>
+	</div>
+	
+<!--	..........................................................................................    -->
+	
+	<div data-role="page" id="koromon" data-theme="a">
+		<div data-role="header" data-theme="b">
+			<h1>Koromon</h1>
+		</div>
+		<div data-role="content" class="ui-container">
+			
+			<button onclick="location.href='index.html#digidex'">To DigiDex</button>
+			
+		</div>
+		<div data-role="footer" data-theme="b" data-position="fixed">
+			<h4>KuroyukiDev &copy; 2018</h4>
+		</div>
+	</div>
+	
+<!--	..........................................................................................    -->
+	
+	<div data-role="page" id="motimon" data-theme="a">
+		<div data-role="header" data-theme="b">
+			<h1>Motimon</h1>
+		</div>
+		<div data-role="content" class="ui-container">
+			
+			<button onclick="location.href='index.html#digidex'">To DigiDex</button>
+			
+		</div>
+		<div data-role="footer" data-theme="b" data-position="fixed">
+			<h4>KuroyukiDev &copy; 2018</h4>
+		</div>
+	</div>
+	
+<!--	..........................................................................................    -->
+	
+	<div data-role="page" id="nyaromon" data-theme="a">
+		<div data-role="header" data-theme="b">
+			<h1>Nyaromon</h1>
+		</div>
+		<div data-role="content" class="ui-container">
+			
+			<button onclick="location.href='index.html#digidex'">To DigiDex</button>
+			
+		</div>
+		<div data-role="footer" data-theme="b" data-position="fixed">
+			<h4>KuroyukiDev &copy; 2018</h4>
+		</div>
+	</div>
+	
+<!--	..........................................................................................    -->
+	
+	<div data-role="page" id="pagumon" data-theme="a">
+		<div data-role="header" data-theme="b">
+			<h1>Pagumon</h1>
+		</div>
+		<div data-role="content" class="ui-container">
+			
+			<button onclick="location.href='index.html#digidex'">To DigiDex</button>
+			
+		</div>
+		<div data-role="footer" data-theme="b" data-position="fixed">
+			<h4>KuroyukiDev &copy; 2018</h4>
+		</div>
+	</div>
+	
+<!--	..........................................................................................    -->
+	
+	<div data-role="page" id="tanemon" data-theme="a">
+		<div data-role="header" data-theme="b">
+			<h1>Tanemon</h1>
+		</div>
+		<div data-role="content" class="ui-container">
+			
+			<button onclick="location.href='index.html#digidex'">To DigiDex</button>
+			
+		</div>
+		<div data-role="footer" data-theme="b" data-position="fixed">
+			<h4>KuroyukiDev &copy; 2018</h4>
+		</div>
+	</div>
+	
+<!--	..........................................................................................    -->
+	
+	<div data-role="page" id="tokomon" data-theme="a">
+		<div data-role="header" data-theme="b">
+			<h1>Tokomon</h1>
+		</div>
+		<div data-role="content" class="ui-container">
+			
+			<button onclick="location.href='index.html#digidex'">To DigiDex</button>
+			
+		</div>
+		<div data-role="footer" data-theme="b" data-position="fixed">
+			<h4>KuroyukiDev &copy; 2018</h4>
+		</div>
+	</div>
+	
+<!--	..........................................................................................    -->
+	
+	<div data-role="page" id="tsumemon" data-theme="a">
+		<div data-role="header" data-theme="b">
+			<h1>Tsumemon</h1>
+		</div>
+		<div data-role="content" class="ui-container">
+			
+			<button onclick="location.href='index.html#digidex'">To DigiDex</button>
+			
+		</div>
+		<div data-role="footer" data-theme="b" data-position="fixed">
+			<h4>KuroyukiDev &copy; 2018</h4>
+		</div>
+	</div>
+	
+<!--	..........................................................................................    -->
+	
+	<div data-role="page" id="tsunomon" data-theme="a">
+		<div data-role="header" data-theme="b">
+			<h1>Tsunomon</h1>
+		</div>
+		<div data-role="content" class="ui-container">
+			
+			<button onclick="location.href='index.html#digidex'">To DigiDex</button>
+			
+		</div>
+		<div data-role="footer" data-theme="b" data-position="fixed">
+			<h4>KuroyukiDev &copy; 2018</h4>
+		</div>
+	</div>
+	
+<!--	..........................................................................................    -->
+	
+	<div data-role="page" id="wanyamon" data-theme="a">
+		<div data-role="header" data-theme="b">
+			<h1>Wanyamon</h1>
+		</div>
+		<div data-role="content" class="ui-container">
+			
+			<button onclick="location.href='index.html#digidex'">To DigiDex</button>
+			
+		</div>
+		<div data-role="footer" data-theme="b" data-position="fixed">
+			<h4>KuroyukiDev &copy; 2018</h4>
+		</div>
+	</div>
+	
+<!--	..........................................................................................    -->
+	
+	<div data-role="page" id="yokomon" data-theme="a">
+		<div data-role="header" data-theme="b">
+			<h1>Yokomon</h1>
+		</div>
+		<div data-role="content" class="ui-container">
+			
+			<button onclick="location.href='index.html#digidex'">To DigiDex</button>
+			
+		</div>
+		<div data-role="footer" data-theme="b" data-position="fixed">
+			<h4>KuroyukiDev &copy; 2018</h4>
+		</div>
+	</div>
+	
+<!--	..........................................................................................    -->
+		
+<!--	Rookie    -->
+	
+<!--	..........................................................................................    -->
+		
+	<div data-role="page" id="agumon" data-theme="a">
+		<div data-role="header" data-theme="b">
+			<h1>Agumon</h1>
+		</div>
+		<div data-role="content" class="ui-container">
+			
+			<button onclick="location.href='index.html#digidex'">To DigiDex</button>
+			
+		</div>
+		<div data-role="footer" data-theme="b" data-position="fixed">
+			<h4>KuroyukiDev &copy; 2018</h4>
+		</div>
+	</div>
+	
+<!--	..........................................................................................    -->
+		
+	<div data-role="page" id="b-agumon" data-theme="a">
+		<div data-role="header" data-theme="b">
+			<h1>Agumon (Black)</h1>
+		</div>
+		<div data-role="content" class="ui-container">
+			
+			<button onclick="location.href='index.html#digidex'">To DigiDex</button>
+			
+		</div>
+		<div data-role="footer" data-theme="b" data-position="fixed">
+			<h4>KuroyukiDev &copy; 2018</h4>
+		</div>
+	</div>
+	
+<!--	..........................................................................................    -->
+		
+	<div data-role="page" id="armadillomon" data-theme="a">
+		<div data-role="header" data-theme="b">
+			<h1>Armadillomon</h1>
+		</div>
+		<div data-role="content" class="ui-container">
+			
+			<button onclick="location.href='index.html#digidex'">To DigiDex</button>
+			
+		</div>
+		<div data-role="footer" data-theme="b" data-position="fixed">
+			<h4>KuroyukiDev &copy; 2018</h4>
+		</div>
+	</div>
+	
+<!--	..........................................................................................    -->
+		
+	<div data-role="page" id="betamon" data-theme="a">
+		<div data-role="header" data-theme="b">
+			<h1>Betamon</h1>
+		</div>
+		<div data-role="content" class="ui-container">
+			
+			<button onclick="location.href='index.html#digidex'">To DigiDex</button>
+			
+		</div>
+		<div data-role="footer" data-theme="b" data-position="fixed">
+			<h4>KuroyukiDev &copy; 2018</h4>
+		</div>
+	</div>
+	
+<!--	..........................................................................................    -->
+		
+	<div data-role="page" id="biyomon" data-theme="a">
+		<div data-role="header" data-theme="b">
+			<h1>Biyomon</h1>
+		</div>
+		<div data-role="content" class="ui-container">
+			
+			<button onclick="location.href='index.html#digidex'">To DigiDex</button>
+			
+		</div>
+		<div data-role="footer" data-theme="b" data-position="fixed">
+			<h4>KuroyukiDev &copy; 2018</h4>
+		</div>
+	</div>
+	
+<!--	..........................................................................................    -->
+		
+	<div data-role="page" id="demidevimon" data-theme="a">
+		<div data-role="header" data-theme="b">
+			<h1>DemiDevimon</h1>
+		</div>
+		<div data-role="content" class="ui-container">
+			
+			<button onclick="location.href='index.html#digidex'">To DigiDex</button>
+			
+		</div>
+		<div data-role="footer" data-theme="b" data-position="fixed">
+			<h4>KuroyukiDev &copy; 2018</h4>
+		</div>
+	</div>
+	
+<!--	..........................................................................................    -->
+		
+	<div data-role="page" id="dorumon" data-theme="a">
+		<div data-role="header" data-theme="b">
+			<h1>Dorumon</h1>
+		</div>
+		<div data-role="content" class="ui-container">
+			
+			<button onclick="location.href='index.html#digidex'">To DigiDex</button>
+			
+		</div>
+		<div data-role="footer" data-theme="b" data-position="fixed">
+			<h4>KuroyukiDev &copy; 2018</h4>
+		</div>
+	</div>
+	
+<!--	..........................................................................................    -->
+		
+	<div data-role="page" id="elecmon" data-theme="a">
+		<div data-role="header" data-theme="b">
+			<h1>Elecmon</h1>
+		</div>
+		<div data-role="content" class="ui-container">
+			
+			<button onclick="location.href='index.html#digidex'">To DigiDex</button>
+			
+		</div>
+		<div data-role="footer" data-theme="b" data-position="fixed">
+			<h4>KuroyukiDev &copy; 2018</h4>
+		</div>
+	</div>
+	
+<!--	..........................................................................................    -->
+		
+	<div data-role="page" id="falcomon" data-theme="a">
+		<div data-role="header" data-theme="b">
+			<h1>Falcomon</h1>
+		</div>
+		<div data-role="content" class="ui-container">
+			
+			<button onclick="location.href='index.html#digidex'">To DigiDex</button>
+			
+		</div>
+		<div data-role="footer" data-theme="b" data-position="fixed">
+			<h4>KuroyukiDev &copy; 2018</h4>
+		</div>
+	</div>
+	
+<!--	..........................................................................................    -->
+		
+	<div data-role="page" id="gabumon" data-theme="a">
+		<div data-role="header" data-theme="b">
+			<h1>Gabumon</h1>
+		</div>
+		<div data-role="content" class="ui-container">
+			
+			<button onclick="location.href='index.html#digidex'">To DigiDex</button>
+			
+		</div>
+		<div data-role="footer" data-theme="b" data-position="fixed">
+			<h4>KuroyukiDev &copy; 2018</h4>
+		</div>
+	</div>
+	
+<!--	..........................................................................................    -->
+		
+	<div data-role="page" id="b-gabumon" data-theme="a">
+		<div data-role="header" data-theme="b">
+			<h1>Gabumon (Black)</h1>
+		</div>
+		<div data-role="content" class="ui-container">
+			
+			<button onclick="location.href='index.html#digidex'">To DigiDex</button>
+			
+		</div>
+		<div data-role="footer" data-theme="b" data-position="fixed">
+			<h4>KuroyukiDev &copy; 2018</h4>
+		</div>
+	</div>
+	
+<!--	..........................................................................................    -->
+		
+	<div data-role="page" id="gaomon" data-theme="a">
+		<div data-role="header" data-theme="b">
+			<h1>Gaomon</h1>
+		</div>
+		<div data-role="content" class="ui-container">
+			
+			<button onclick="location.href='index.html#digidex'">To DigiDex</button>
+			
+		</div>
+		<div data-role="footer" data-theme="b" data-position="fixed">
+			<h4>KuroyukiDev &copy; 2018</h4>
+		</div>
+	</div>
+	
+<!--	..........................................................................................    -->
+		
+	<div data-role="page" id="gazimon" data-theme="a">
+		<div data-role="header" data-theme="b">
+			<h1>Gazimon</h1>
+		</div>
+		<div data-role="content" class="ui-container">
+			
+			<button onclick="location.href='index.html#digidex'">To DigiDex</button>
+			
+		</div>
+		<div data-role="footer" data-theme="b" data-position="fixed">
+			<h4>KuroyukiDev &copy; 2018</h4>
+		</div>
+	</div>
+	
+<!--	..........................................................................................    -->
+		
+	<div data-role="page" id="goblimon" data-theme="a">
+		<div data-role="header" data-theme="b">
+			<h1>Goblimon</h1>
+		</div>
+		<div data-role="content" class="ui-container">
+			
+			<button onclick="location.href='index.html#digidex'">To DigiDex</button>
+			
+		</div>
+		<div data-role="footer" data-theme="b" data-position="fixed">
+			<h4>KuroyukiDev &copy; 2018</h4>
+		</div>
+	</div>
+	
+<!--	..........................................................................................    -->
+		
+	<div data-role="page" id="gomamon" data-theme="a">
+		<div data-role="header" data-theme="b">
+			<h1>Gomamon</h1>
+		</div>
+		<div data-role="content" class="ui-container">
+			
+			<button onclick="location.href='index.html#digidex'">To DigiDex</button>
+			
+		</div>
+		<div data-role="footer" data-theme="b" data-position="fixed">
+			<h4>KuroyukiDev &copy; 2018</h4>
+		</div>
+	</div>
+	
+<!--	..........................................................................................    -->
+		
+	<div data-role="page" id="gotsumon" data-theme="a">
+		<div data-role="header" data-theme="b">
+			<h1>Gotsumon</h1>
+		</div>
+		<div data-role="content" class="ui-container">
+			
+			<button onclick="location.href='index.html#digidex'">To DigiDex</button>
+			
+		</div>
+		<div data-role="footer" data-theme="b" data-position="fixed">
+			<h4>KuroyukiDev &copy; 2018</h4>
+		</div>
+	</div>
+	
+<!--	..........................................................................................    -->
+		
+	<div data-role="page" id="guilmon" data-theme="a">
+		<div data-role="header" data-theme="b">
+			<h1>Guilmon</h1>
+		</div>
+		<div data-role="content" class="ui-container">
+			
+			<button onclick="location.href='index.html#digidex'">To DigiDex</button>
+			
+		</div>
+		<div data-role="footer" data-theme="b" data-position="fixed">
+			<h4>KuroyukiDev &copy; 2018</h4>
+		</div>
+	</div>
+	
+<!--	..........................................................................................    -->
+		
+	<div data-role="page" id="hackmon" data-theme="a">
+		<div data-role="header" data-theme="b">
+			<h1>Hackmon</h1>
+		</div>
+		<div data-role="content" class="ui-container">
+			
+			<button onclick="location.href='index.html#digidex'">To DigiDex</button>
+			
+		</div>
+		<div data-role="footer" data-theme="b" data-position="fixed">
+			<h4>KuroyukiDev &copy; 2018</h4>
+		</div>
+	</div>
+	
+<!--	..........................................................................................    -->
+		
+	<div data-role="page" id="hagurumon" data-theme="a">
+		<div data-role="header" data-theme="b">
+			<h1>Hagurumon</h1>
+		</div>
+		<div data-role="content" class="ui-container">
+			
+			<button onclick="location.href='index.html#digidex'">To DigiDex</button>
+			
+		</div>
+		<div data-role="footer" data-theme="b" data-position="fixed">
+			<h4>KuroyukiDev &copy; 2018</h4>
+		</div>
+	</div>
+	
+<!--	..........................................................................................    -->
+		
+	<div data-role="page" id="hawkmon" data-theme="a">
+		<div data-role="header" data-theme="b">
+			<h1>Hawkmon</h1>
+		</div>
+		<div data-role="content" class="ui-container">
+			
+			<button onclick="location.href='index.html#digidex'">To DigiDex</button>
+			
+		</div>
+		<div data-role="footer" data-theme="b" data-position="fixed">
+			<h4>KuroyukiDev &copy; 2018</h4>
+		</div>
+	</div>
+	
+<!--	..........................................................................................    -->
+		
+	<div data-role="page" id="impmon" data-theme="a">
+		<div data-role="header" data-theme="b">
+			<h1>Impmon</h1>
+		</div>
+		<div data-role="content" class="ui-container">
+			
+			<button onclick="location.href='index.html#digidex'">To DigiDex</button>
+			
+		</div>
+		<div data-role="footer" data-theme="b" data-position="fixed">
+			<h4>KuroyukiDev &copy; 2018</h4>
+		</div>
+	</div>
+	
+<!--	..........................................................................................    -->
+		
+	<div data-role="page" id="keramon" data-theme="a">
+		<div data-role="header" data-theme="b">
+			<h1>Keramon</h1>
+		</div>
+		<div data-role="content" class="ui-container">
+			
+			<button onclick="location.href='index.html#digidex'">To DigiDex</button>
+			
+		</div>
+		<div data-role="footer" data-theme="b" data-position="fixed">
+			<h4>KuroyukiDev &copy; 2018</h4>
+		</div>
+	</div>
+	
+<!--	..........................................................................................    -->
+		
+	<div data-role="page" id="kudamon" data-theme="a">
+		<div data-role="header" data-theme="b">
+			<h1>Kudamon</h1>
+		</div>
+		<div data-role="content" class="ui-container">
+			
+			<button onclick="location.href='index.html#digidex'">To DigiDex</button>
+			
+		</div>
+		<div data-role="footer" data-theme="b" data-position="fixed">
+			<h4>KuroyukiDev &copy; 2018</h4>
+		</div>
+	</div>
+	
+<!--	..........................................................................................    -->
+	
+	
+	
+	
+	<script type="text/javascript" src="cordova.js"></script>
+	<script type="text/javascript" src="/scripts/bundle.js"></script>
+	
+</body>
+</html>
