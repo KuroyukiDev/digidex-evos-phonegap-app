@@ -1,12 +1,12 @@
 {
   "name": "digimon-cyber-sleuth-evos",
-  "version": "1.5.0",
+  "version": "1.8.8",
   "description": "Digivolution Data for the Digimon Story: Cyber Sleuth game for PS Vita in the palm of your hand!",
   "main": "index.js",
   "scripts": {
+	"start": "node heroku-serve.js",
     "dev-server": "webpack-dev-server --mode development",
-    "build": "webpack --mode production",
-	"start": "webpack --mode production"
+    "build": "webpack --mode production"
   },
   "author": "KuroyukiDev",
   "license": "ISC",
