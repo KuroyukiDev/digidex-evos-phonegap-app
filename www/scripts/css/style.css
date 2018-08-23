@@ -1,7 +1,21 @@
-.ui-content h1, .ui-content p {
-	color: black;
+.text-center {
+	text-align: center;
 }
 
-.text-center {
+[data-role="listview"].ui-listview, [data-role="listview"].ui-listview li, [data-role="listview"].ui-listview li a.ui-btn {
+	background-color: darkslategray;
+	color: burlywood;
+	text-shadow: none;
+}
+
+div.ui-collapsible.ui-collapsible-inset.ui-corner-all.ui-collapsible-themed-content.ui-collapsible-collapsed.ui-last-child > h3, div.ui-collapsible.ui-collapsible-inset.ui-corner-all.ui-collapsible-themed-content > h3 > a {
+	background-color: black;
+	color: firebrick;
+	text-shadow: none;
+}
+
+div.ui-collapsible.ui-collapsible-inset.ui-corner-all.ui-collapsible-themed-content.ui-last-child > div > ul > li.ui-li-static.ui-body-inherit {
+	background-color: burlywood;
+	color: black;
 	text-align: center;
 }
